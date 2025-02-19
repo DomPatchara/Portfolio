@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Ovo&display=swap');
+
+
+
+@theme {
+    /* Font */
+    --font-Ovo: 'Ovo', serif;
+    --font-Outfit: 'Outfit', sans-serif;
+
+    /* Color */
+    --color-lightHover: #fcf4ff;
+    --color-DarkHover: #2a004a;
+    --color-DarkTheme: #11001F;
+
+}
+
