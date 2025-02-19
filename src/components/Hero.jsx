@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='w-11/12 max-w-3xl h-screen mx-auto flex flex-col  items-center justify-center text-center'>
 
         <div>
-            <img src={assets.profile_img} className='w-32 rounded-full' />
+            <img src={assets.profile_img} className='w-40 rounded-full' />
         </div>
 
         <h3 className='flex gap-2 items-start text-xl md:text-2xl mb-3 font-Ovo'>

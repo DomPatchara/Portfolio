@@ -14,5 +14,8 @@
     --color-DarkHover: #2a004a;
     --color-DarkTheme: #11001F;
 
+    /*Box Shadow*/
+    --shadow-black: 4px 4px 5px #000; /* Horizon Vertical Blur Color */
+    --shadow-white: 4px 4px 0 #fff;
 }
 
