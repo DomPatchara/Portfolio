@@ -25,7 +25,7 @@ const Hero = () => {
 
             <a 
                 href="#contact"
-                className='px-10 py-2 border border-white bg-black text-white rounded-full flex items-center gap-2'
+                className='px-10 py-2 border border-white bg-black text-white rounded-full flex items-center gap-2 dark:bg-transparent'
             >
                 contact me <img src={assets.right_arrow_white} className='w-4 mt-1'/>
             </a>
@@ -33,7 +33,7 @@ const Hero = () => {
             <a 
                 href="/sample-resume.pdf" 
                 download 
-                className='px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2'
+                className='px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200'
             >
                 my resume <img src={assets.download_icon} className='w-4' />
             </a>

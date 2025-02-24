@@ -17,5 +17,13 @@
     /*Box Shadow*/
     --shadow-black: 4px 4px 5px #000; /* Horizon Vertical Blur Color */
     --shadow-white: 4px 4px 0 #fff;
+
 }
+
+@utility grid-cols-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
 

@@ -6,10 +6,10 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
+import react from './react.svg';
 import figma from './figma.png';
 import git from './git.png';
-import mongodb from './mongodb.png';
+import tailwindcss from './tailwindcss.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -35,6 +35,15 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import nextjs from './nextjs.svg';
+import github_for_darkmode from './github_for_darkmode.png';
+import nextjs_white_icon from './nextjs-white-icon.svg';
+
+import work1 from './public/work-1.png'
+import work2 from './public/work-2.png'
+import work3 from './public/work-3.png'
+import work4 from './public/work-4.png'
+
 
 export const assets = {
     user_image,
@@ -45,10 +54,13 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
-    firebase,
     figma,
     git,
-    mongodb,
+    github_for_darkmode,
+    tailwindcss,
+    nextjs,
+    nextjs_white_icon,
+    react,
     right_arrow_white,
     logo,
     logo_dark,
@@ -73,29 +85,33 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    work1,
+    work2,
+    work3,
+    work4
 };
 
 export const workData = [
     {
         title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        description: 'Movie Website',
+        bgImage: work1,
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
-        bgImage: '/work-2.png',
+        bgImage: work2,
     },
     {
         title: 'Photography site',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: work3,
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        bgImage: work4,
     },
 ]
 
@@ -113,5 +129,10 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    { lightMode: assets.vscode, darkMode: assets.vscode },
+    { lightMode: assets.git, darkMode: assets.github_for_darkmode },
+    { lightMode: assets.tailwindcss, darkMode: assets.tailwindcss },
+    { lightMode: assets.figma, darkMode: assets.figma },
+    { lightMode: assets.react, darkMode: assets.react },
+    { lightMode: assets.nextjs, darkMode: assets.nextjs_white_icon }    
 ];
