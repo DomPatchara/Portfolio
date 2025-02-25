@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add('dark')
+      document.documentElement.classList.add('dark')  // select html element for add 'dark'
       localStorage.theme = 'dark'
     } else {
       document.documentElement.classList.remove('dark')
@@ -38,9 +38,9 @@ const App = () => {
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
       <Hero isDarkMode={isDarkMode}/>
       <About isDarkMode={isDarkMode}/>
-      <Services isDarkMode={isDarkMode}/>
-      <Work isDarkMode={isDarkMode}/>
-      <Contact isDarkMode={isDarkMode}/>
+      <Services/>
+      <Work/>
+      <Contact/>
       <Footer isDarkMode={isDarkMode}/>
     </>
   )

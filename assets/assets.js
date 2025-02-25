@@ -44,8 +44,11 @@ import work2 from './public/work-2.png'
 import work3 from './public/work-3.png'
 import work4 from './public/work-4.png'
 
+import footer from './public/footer-bg-color.png'
+
 
 export const assets = {
+    footer,
     user_image,
     code_icon,
     code_icon_dark,

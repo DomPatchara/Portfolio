@@ -16,11 +16,12 @@ const Work = () => {
             of projects showcasing my expertise in front-end development.
       </p>
 
-      <div className='grid-cols-auto my-10 gap-5'>
+      <div className='grid-cols-auto my-10 gap-5 dark:text-black'>
         {workData.map((project, index) => (
           <div key={index} 
                 style={{backgroundImage: `url(${project.bgImage})`}} 
                 className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'>
+
             <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
             py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
               <div>
@@ -33,6 +34,7 @@ const Work = () => {
                 <img src={assets.send_icon} alt="send icon" className='w-5'/>
               </div>
             </div>
+
           </div>
         ))}
       </div>
