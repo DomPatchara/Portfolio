@@ -12,7 +12,9 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     }
 
     const closeMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(16rem)'
+        setTimeout(()=> {
+            sideMenuRef.current.style.transform = 'translateX(16rem)'
+        }, 500)
     }
 
     useEffect(() => {
@@ -24,6 +26,23 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             }
         })
     }, [])
+
+ 
+    // Add Style Active Menus
+    const links = document.querySelectorAll('a.link')
+
+    const setActiveClass = (e) => {
+
+        //1. remove active all menus 
+        links.forEach(link => link.classList.remove('active'))
+
+        //2. add active specific menu
+        e.target.classList.add('active')
+    }
+
+    links.forEach(link =>{
+        link.addEventListener('click', setActiveClass)
+    });
 
   return (
     <>
@@ -39,16 +58,16 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <img src={isDarkMode ? assets.logo_dark :assets.logo} className='w-30 cursor-pointer mr-14 '/>
             </a>
 
-            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white/50 shadow-lg dark:border dark:border-white/50 dark:bg-transparent"} `}>
-                <li><a className='font-Ovo' href="#top">Home</a></li>
-                <li><a className='font-Ovo' href="#about">About me</a></li>
-                <li><a className='font-Ovo' href="#services">Services</a></li>
-                <li><a className='font-Ovo' href="#work">My Work</a></li>
-                <li><a className='font-Ovo' href="#contact">Contact me</a></li>
+            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white/50 shadow-lg dark:border dark:border-white/50 dark:bg-transparent"}`}>
+                <li><a className='font-Ovo link active'  href="#top">Home</a></li>
+                <li><a className='font-Ovo link'  href="#about">About me</a></li>
+                <li><a className='font-Ovo link'  href="#services">Services</a></li>
+                <li><a className='font-Ovo link'  href="#work">My Work</a></li>
+                <li><a className='font-Ovo link'  href="#contact">Contact me</a></li>
             </ul>
 
             <div className='flex items-center gap-4'>
-                <button onClick={() => setIsDarkMode((prev) => (!prev))}>
+                <button onClick={() => setIsDarkMode((prev) => (!prev))} className={`p-2 ${isDarkMode ? 'hover:bg-DarkHover/40': 'hover:bg-gray-200'} rounded-full cursor-pointer`}>
                     <img src={isDarkMode ?  assets.sun_icon : assets.moon_icon} alt="" className='w-6 cursor-pointer'/>
                 </button>
 
@@ -67,16 +86,16 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             </div>
 
             {/*-------------Moblie menu ------------- */}
-            <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 fixed top-0 bottom-0  -right-[16rem] py-20 px-10 w-64 h-screen bg-rose-50 transition duration-500 dark:bg-DarkHover dark:text-white'>
+            <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 fixed top-0 bottom-0  -right-[16rem] py-20 px-10 w-64 h-screen bg-gray-200 transition duration-500 dark:bg-DarkHover dark:text-white'>
                 <div className='absolute right-6 top-6' onClick={closeMenu}>
                     <img src={isDarkMode ? assets.close_white : assets.close_black} alt="" className='w-5 cursor-pointer'/>
                 </div>
 
-                <li><a className='font-Ovo' onClick={closeMenu} href="#top">Home</a></li>
-                <li><a className='font-Ovo' onClick={closeMenu} href="#about">About me</a></li>
-                <li><a className='font-Ovo' onClick={closeMenu} href="#services">Services</a></li>
-                <li><a className='font-Ovo' onClick={closeMenu} href="#work">My Work</a></li>
-                <li><a className='font-Ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
+                <li><a className='font-Ovo link active' onClick={closeMenu} href="#top">Home</a></li>
+                <li><a className='font-Ovo link' onClick={closeMenu} href="#about">About me</a></li>
+                <li><a className='font-Ovo link' onClick={closeMenu} href="#services">Services</a></li>
+                <li><a className='font-Ovo link' onClick={closeMenu} href="#work">My Work</a></li>
+                <li><a className='font-Ovo link' onClick={closeMenu} href="#contact">Contact me</a></li>
             </ul>
         </nav>
     </>

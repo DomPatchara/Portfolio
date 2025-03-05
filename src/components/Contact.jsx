@@ -65,7 +65,8 @@ const Contact = () => {
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:0.9, delay:0.5}}
-      onSubmit={onSubmit} className='max-w-2xl mx-auto'>
+      onSubmit={onSubmit} 
+      className='max-w-2xl mx-auto'>
 
         <div className='grid-cols-auto gap-6 mt-10 mb-8'>
             <motion.input 
@@ -94,9 +95,12 @@ const Contact = () => {
         initial={{opacity:0, y:100}}
         whileInView={{opacity:1, y: 0}}
         transition={{duration:1.3, delay:0.6}}
-        rows='6' placeholder='Enter your message' required
-        className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-DarkHover/30 dark:border-white/90'
-        name='message'></motion.textarea>
+            rows='6' 
+            placeholder='Enter your message' 
+            required
+            className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-DarkHover/30 dark:border-white/90'
+            name='message'>
+        </motion.textarea>
 
         <motion.button 
         whileHover={{scale:1.05}}

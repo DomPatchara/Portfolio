@@ -52,7 +52,7 @@ const Work = () => {
             py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
               <div>
                 <h2 className='font-semibold'>{project.title}</h2>
-                <p className='text-sm text-gray-700'>{project.description}</p>
+                <p className='text-[13px] text-gray-700'>{project.description}</p>
               </div>
 
               <div className='flex flex-col justify-center border-1 p-2 

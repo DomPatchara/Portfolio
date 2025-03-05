@@ -20,6 +20,13 @@
 
 }
 
+ul li a.active {
+    background-color: rgba(178, 177, 197, 0.333);
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
 @utility grid-cols-auto {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
