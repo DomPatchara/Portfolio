@@ -42,7 +42,7 @@ const About = ({isDarkMode}) => {
         whileInView={{opacity:1}}
         transition={{duration:0.8, delay:0.6}}
         className='flex-1'>
-          <p className='mb-10 max-w-2xl font-Ovo'>
+          <p className='mb-10 max-w-2xl'>
             I am an experienced Frontend Developer with over a decade
             of professional expertise in the field. Throughtout my career, I have
             had the privilege of collaborating with prestigious organizations, contributing
@@ -71,7 +71,7 @@ const About = ({isDarkMode}) => {
           initial={{opacity:0, y:20}}
           whileInView={{opacity:1, y: 0}}
           transition={{duration:0.5, delay:1.3}}
-          className='my-6 text-gray-700 font-Ovo dark:text-white'>Tools & Technologies I Use</motion.h4>
+          className='my-6 text-gray-700 dark:text-white'>Tools & Technologies I Use</motion.h4>
 
           <motion.ul 
           initial={{opacity:0}}

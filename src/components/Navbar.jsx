@@ -29,20 +29,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
  
     // Add Style Active Menus
-    const links = document.querySelectorAll('a.link')
+   const [isActive, setIsActive] = useState("Home");
 
-    const setActiveClass = (e) => {
-
-        //1. remove active all menus 
-        links.forEach(link => link.classList.remove('active'))
-
-        //2. add active specific menu
-        e.target.classList.add('active')
-    }
-
-    links.forEach(link =>{
-        link.addEventListener('click', setActiveClass)
-    });
+   const handleActive = (name) => {
+        setIsActive(name)
+   }
 
   return (
     <>
@@ -59,11 +50,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             </a>
 
             <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white/50 shadow-lg dark:border dark:border-white/50 dark:bg-transparent"}`}>
-                <li><a className='font-Ovo link active'  href="#top">Home</a></li>
-                <li><a className='font-Ovo link'  href="#about">About me</a></li>
-                <li><a className='font-Ovo link'  href="#services">Services</a></li>
-                <li><a className='font-Ovo link'  href="#work">My Work</a></li>
-                <li><a className='font-Ovo link'  href="#contact">Contact me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''}`}    onClick={()=>handleActive("Home")}     href="#top">Home</a></li>
+                <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>handleActive("About")}    href="#about">About me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>handleActive("Service")}  href="#services">Services</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>handleActive("Work")}     href="#work">My Work</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>handleActive("Contact")}  href="#contact">Contact me</a></li>
             </ul>
 
             <div className='flex items-center gap-4'>
