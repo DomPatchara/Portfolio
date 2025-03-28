@@ -38,8 +38,8 @@ const Services = () => {
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:0.9, delay:0.6}}
-      className='grid grid-cols-1 gap-6 my-10 sm:grid-cols-2 lg:grid-cols-4 '>
-        {serviceData.map(({icon, title, description, link}, index)=>(
+      className='grid grid-cols-1 gap-6 my-10 sm:grid-cols-2 lg:grid-cols-3'>
+        {serviceData.map(({icon, title, description}, index)=>(
           <motion.div 
           whileHover={{scale:1.05}}
           key={index} className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-DarkHover dark:hover:shadow-white'>
@@ -48,9 +48,6 @@ const Services = () => {
              <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
               {description}
              </p>
-             <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                Read more <img src={assets.right_arrow} className='w-4 mt-0.5'/>
-             </a>
           </motion.div>
         ))}
 

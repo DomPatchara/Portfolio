@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 const App = () => {
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(()=> {
     if (localStorage.theme === "dark" || 
@@ -39,7 +39,7 @@ const App = () => {
       <Hero isDarkMode={isDarkMode}/>
       <About isDarkMode={isDarkMode}/>
       <Services/>
-      <Work/>
+      <Work isDarkMode={isDarkMode}/>
       <Contact/>
       <Footer isDarkMode={isDarkMode}/>
     </>

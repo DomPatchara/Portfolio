@@ -18,6 +18,8 @@
     --shadow-black: 4px 4px 5px #000; /* Horizon Vertical Blur Color */
     --shadow-white: 4px 4px 0 #fff;
 
+    --shadow-4xl: 0 50px 50px rgba(0, 0, 0, 0.25);
+
 }
 
 ul li a.active {
@@ -30,6 +32,12 @@ ul li a.active {
 @utility grid-cols-auto {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+
+@layer components {
+    .shadow-4xl {
+        @apply shadow-[0_10px_50px_rgba(0,0,0,0.3)]
+    }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

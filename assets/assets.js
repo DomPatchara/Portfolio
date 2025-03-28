@@ -1,4 +1,3 @@
-import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -49,7 +48,6 @@ import footer from './public/footer-bg-color.png'
 
 export const assets = {
     footer,
-    user_image,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -102,27 +100,26 @@ export const workData = [
         bgImage: work1,
     },
     {
-        title: 'Music Player UI',
-        description: 'Mobile App',
+        title: 'Pizza Resterant',
+        description: 'UI design',
         bgImage: work2,
     },
     {
-        title: 'Photography site',
+        title: 'Ecommerce Website',
         description: 'Web Design',
         bgImage: work3,
     },
     {
-        title: 'UI/UX designing',
+        title: 'SaaS Designing',
         description: 'UI/UX Design',
         bgImage: work4,
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...'},
+    { icon: assets.graphics_icon, title: 'Responsive UI design', description: 'Developing flexible, mobile-first designs that adapt fluidly across devices, with attention to detail in visual hierarchy and usability.'},
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...'},
 ]
 
 export const infoList = [
