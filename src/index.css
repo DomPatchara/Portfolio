@@ -4,6 +4,11 @@
 @import "tailwindcss";
 
 
+@layer base {
+    body {
+        overflow-x: hidden;
+    }
+}
 @theme {
     /* Font */
     --font-Ovo: 'Ovo', serif;
@@ -22,7 +27,7 @@
 
 }
 
-ul li a.active {
+a.active {
     background-color: rgba(178, 177, 197, 0.333);
     padding: 10px 15px;
     border-radius: 50px;
@@ -38,6 +43,10 @@ ul li a.active {
     .shadow-4xl {
         @apply shadow-[0_10px_50px_rgba(0,0,0,0.3)]
     }
+
+    .fading-icon {
+        @apply [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
+      }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

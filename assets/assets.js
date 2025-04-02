@@ -37,6 +37,8 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import nextjs from './nextjs.svg';
 import github_for_darkmode from './github_for_darkmode.png';
 import nextjs_white_icon from './nextjs-white-icon.svg';
+import typescript from './typescript.svg'
+import framer from './framer.svg'
 
 import work1 from './public/work-1.png'
 import work2 from './public/work-2.png'
@@ -62,6 +64,8 @@ export const assets = {
     nextjs,
     nextjs_white_icon,
     react,
+    typescript,
+    framer,
     right_arrow_white,
     logo,
     logo_dark,
@@ -117,22 +121,29 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...'},
-    { icon: assets.graphics_icon, title: 'Responsive UI design', description: 'Developing flexible, mobile-first designs that adapt fluidly across devices, with attention to detail in visual hierarchy and usability.'},
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...'},
+    { title: 'Web Development', description: 'I build fast, modern websites using Next.js, TypeScript, Tailwind CSS, and Framer Motion for animations.'},
+    { title: 'Responsive Design', description: 'I create scalable SaaS and web apps that look great on all devices.'},
+    { title: 'UX/UI Web Design', description: 'I design intuitive and visually appealing websites, focusing on user experience and accessibility.'},
 ]
 
+export const serviceIcon = [
+    {icon: nextjs, darkMode: nextjs_white_icon},
+    {icon: typescript, darkMode: typescript},
+    {icon: tailwindcss, darkMode: tailwindcss},
+    {icon: framer, darkMode:framer}
+];
+
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Chulalongkorn University MIS' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 3 projects' }
+    { icon: code_icon, iconDark: code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: edu_icon, iconDark: edu_icon_dark, title: 'Education', description: 'Chulalongkorn University MIS' },
+    { icon: project_icon, iconDark: project_icon_dark, title: 'Projects', description: 'Built more than 3 projects' }
 ];
 
 export const toolsData = [
-    { lightMode: assets.vscode, darkMode: assets.vscode },
-    { lightMode: assets.git, darkMode: assets.github_for_darkmode },
-    { lightMode: assets.tailwindcss, darkMode: assets.tailwindcss },
-    { lightMode: assets.figma, darkMode: assets.figma },
-    { lightMode: assets.react, darkMode: assets.react },
-    { lightMode: assets.nextjs, darkMode: assets.nextjs_white_icon }    
+    { lightMode: vscode,        darkMode: vscode },
+    { lightMode: git,           darkMode: github_for_darkmode },
+    { lightMode: tailwindcss,   darkMode: tailwindcss },
+    { lightMode: figma,         darkMode: figma },
+    { lightMode: react,         darkMode: react },
+    { lightMode: nextjs,        darkMode: nextjs_white_icon }    
 ];

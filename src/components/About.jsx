@@ -101,7 +101,7 @@ const About = ({ isDarkMode }) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex items-center gap-3 sm:gap-5"
+            className="flex items-center gap-3 sm:gap-5 "
           >
             {toolsData.map((tool, i) => (
               <motion.li

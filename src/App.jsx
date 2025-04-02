@@ -38,7 +38,7 @@ const App = () => {
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
       <Hero isDarkMode={isDarkMode}/>
       <About isDarkMode={isDarkMode}/>
-      <Services/>
+      <Services isDarkMode={isDarkMode}/>
       <Work isDarkMode={isDarkMode}/>
       <Contact/>
       <Footer isDarkMode={isDarkMode}/>

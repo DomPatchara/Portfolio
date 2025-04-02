@@ -31,9 +31,10 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     // Add Style Active Menus
    const [isActive, setIsActive] = useState("Home");
 
-   const handleActive = (name) => {
-        setIsActive(name)
-   }
+   useEffect(() => {
+    console.log("Current Active:", isActive);
+}, [isActive]);
+
 
   return (
     <>
@@ -50,11 +51,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             </a>
 
             <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white/50 shadow-lg dark:border dark:border-white/50 dark:bg-transparent"}`}>
-                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''}`}    onClick={()=>handleActive("Home")}     href="#top">Home</a></li>
-                <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>handleActive("About")}    href="#about">About me</a></li>
-                <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>handleActive("Service")}  href="#services">Services</a></li>
-                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>handleActive("Work")}     href="#work">My Work</a></li>
-                <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>handleActive("Contact")}  href="#contact">Contact me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''}`}    onClick={()=>setIsActive("Home")}     href="#top">Home</a></li>
+                <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>setIsActive("About")}    href="#about">About me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>setIsActive("Service")}  href="#services">Services</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>setIsActive("Work")}     href="#work">My Work</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>setIsActive("Contact")}  href="#contact">Contact me</a></li>
             </ul>
 
             <div className='flex items-center gap-4'>
@@ -82,11 +83,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                     <img src={isDarkMode ? assets.close_white : assets.close_black} alt="" className='w-5 cursor-pointer'/>
                 </div>
 
-                <li><a className='font-Ovo link active' onClick={closeMenu} href="#top">Home</a></li>
-                <li><a className='font-Ovo link' onClick={closeMenu} href="#about">About me</a></li>
-                <li><a className='font-Ovo link' onClick={closeMenu} href="#services">Services</a></li>
-                <li><a className='font-Ovo link' onClick={closeMenu} href="#work">My Work</a></li>
-                <li><a className='font-Ovo link' onClick={closeMenu} href="#contact">Contact me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''}`}    onClick={()=>{setIsActive("Home"); closeMenu();}}  href="#top">Home</a></li>
+                <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>{setIsActive("About"); closeMenu();}  }  href="#about">About me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>{setIsActive("Service"); closeMenu();}}  href="#services">Services</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>{setIsActive("Work"); closeMenu();}   }  href="#work">My Work</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>{setIsActive("Contact"); closeMenu();}}  href="#contact">Contact me</a></li>
             </ul>
         </nav>
     </>
