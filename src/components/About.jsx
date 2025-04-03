@@ -108,13 +108,16 @@ const About = ({ isDarkMode }) => {
                 whileHover={{ scale: 1.05 }}
                 key={i}
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer
-                                      duration-500 hover:-translate-y-1 dark:bg-DarkTheme"
+                                      duration-500 hover:-translate-y-1 dark:bg-DarkTheme relative group"
               >
                 <img
                   src={isDarkMode ? tool.darkMode : tool.lightMode}
                   alt="Tool"
                   className="w-5 sm:w-7"
                 />
+                <div className="min-w-max opacity-0 group-hover:opacity-100  absolute bottom-0  translate-y-6">
+                  <p className="text-gray-600 dark:text-white/60 text-sm">{tool.title}</p>
+                </div>
               </motion.li>
             ))}
           </motion.ul>

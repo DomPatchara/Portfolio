@@ -50,8 +50,8 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <img src={isDarkMode ? assets.logo_dark :assets.logo} className='w-30 cursor-pointer mr-14 '/>
             </a>
 
-            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white/50 shadow-lg dark:border dark:border-white/50 dark:bg-transparent"}`}>
-                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''}`}    onClick={()=>setIsActive("Home")}     href="#top">Home</a></li>
+            <ul className={`hidden md:flex items-center  gap-6 lg:gap-8 rounded-full px-6 lg:px-12 py-3 ${isScroll ? "" : "bg-white/50 shadow-lg dark:border dark:border-white/50 dark:bg-transparent"}`}>
+                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''} `}    onClick={()=>setIsActive("Home")}     href="#top">Home</a></li>
                 <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>setIsActive("About")}    href="#about">About me</a></li>
                 <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>setIsActive("Service")}  href="#services">Services</a></li>
                 <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>setIsActive("Work")}     href="#work">My Work</a></li>

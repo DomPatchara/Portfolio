@@ -72,8 +72,8 @@ const Work = ({ isDarkMode }) => {
             </div>
 
             <div
-              className=" absolute bottom-4 right-4 border-1 p-2 
-              rounded-full group-hover:bg-lime-200 transition shadow-[2px_2px_2px_#000]"
+              className={` absolute bottom-4 right-4 ${(index === 0 || index === 3) && 'border-gray-700 shadow-[2px_2px_2px_#303030]'}  border-1 p-2
+              rounded-full group-hover:bg-lime-200 transition shadow-[2px_2px_2px_#000]`} 
             >
               <img src={assets.send_icon} alt="send icon" className="w-5 group-hover:rotate-45 transition duration-500" />
             </div>

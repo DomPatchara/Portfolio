@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { serviceData, serviceIcon } from "../../assets/assets";
+import { assets, serviceData, serviceIcon } from "../../assets/assets";
 import { motion } from "motion/react";
 import { div } from "motion/react-client";
 
@@ -114,8 +114,12 @@ const Services = ({ isDarkMode }) => {
             )}
 
             {index === 2 && (
-              <div className="w-full h-30">
+              <div className="w-full h-30  dark:shadow-[2px_2px_3px_#ffffff] shadow-[2px_2px_3px_#585858]  rounded-xl overflow-hidden">
+                <div className="flex h-full bg-blue-500/90">
+                  <img src={assets.Uxui} alt="" className="w-full md:w-50 lg:w-50" />
+                  <img src={assets.UXui_2} alt="" className="block sm:hidden md:block md:w-25 lg:w-50"  />
 
+                </div>
               </div>
             )}
 

@@ -39,6 +39,9 @@ import github_for_darkmode from './github_for_darkmode.png';
 import nextjs_white_icon from './nextjs-white-icon.svg';
 import typescript from './typescript.svg'
 import framer from './framer.svg'
+import dark_framer from './dark-framer.svg'
+import Uxui from './UI-Element.jpg'
+import UXui_2 from './UI-Element2.svg'
 
 import work1 from './public/work-1.png'
 import work2 from './public/work-2.png'
@@ -48,7 +51,10 @@ import work4 from './public/work-4.png'
 import footer from './public/footer-bg-color.png'
 
 
+
 export const assets = {
+    Uxui,
+    UXui_2,
     footer,
     code_icon,
     code_icon_dark,
@@ -69,6 +75,7 @@ export const assets = {
     right_arrow_white,
     logo,
     logo_dark,
+    dark_framer,
     mail_icon,
     mail_icon_dark,
     profile_img,
@@ -134,16 +141,17 @@ export const serviceIcon = [
 ];
 
 export const infoList = [
-    { icon: code_icon, iconDark: code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: code_icon, iconDark: code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, and TypeScript' },
     { icon: edu_icon, iconDark: edu_icon_dark, title: 'Education', description: 'Chulalongkorn University MIS' },
     { icon: project_icon, iconDark: project_icon_dark, title: 'Projects', description: 'Built more than 3 projects' }
 ];
 
 export const toolsData = [
-    { lightMode: vscode,        darkMode: vscode },
-    { lightMode: git,           darkMode: github_for_darkmode },
-    { lightMode: tailwindcss,   darkMode: tailwindcss },
-    { lightMode: figma,         darkMode: figma },
-    { lightMode: react,         darkMode: react },
-    { lightMode: nextjs,        darkMode: nextjs_white_icon }    
+    { lightMode: vscode,        darkMode: vscode, title: "VS Code" },
+    { lightMode: git,           darkMode: github_for_darkmode, title: "Github" },
+    { lightMode: tailwindcss,   darkMode: tailwindcss, title: "Tailwind CSS" },
+    { lightMode: figma,         darkMode: figma, title: "Figma" },
+    { lightMode: react,         darkMode: react, title: "React" },
+    { lightMode: nextjs,        darkMode: nextjs_white_icon, title: "Next.js" },
+    { lightMode: dark_framer,        darkMode: framer, title:"Framer Motion"}   
 ];
