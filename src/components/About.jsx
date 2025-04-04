@@ -54,7 +54,7 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl">
+          <p className="mb-10 max-w-2xl font-Ovo">
             I’m an entry-level frontend developer from Thailand, passionate
             about creating user-friendly and responsive websites. I'm eager to
             apply my skills and begin my career as a frontend developer.
@@ -70,7 +70,7 @@ const About = ({ isDarkMode }) => {
               <motion.li
                 whileHover={{ sacle: 1.05 }}
                 key={index}
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer duration-500
+                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-default duration-500
                              hover:bg-lightHover hover:-translate-y-1 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-DarkHover/50"
               >
                 <img
@@ -107,7 +107,7 @@ const About = ({ isDarkMode }) => {
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 key={i}
-                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer
+                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
                                       duration-500 hover:-translate-y-1 dark:bg-DarkTheme relative group"
               >
                 <img

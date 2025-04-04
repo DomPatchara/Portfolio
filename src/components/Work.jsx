@@ -43,33 +43,37 @@ const Work = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="grid-cols-auto my-10 gap-5 "
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-10 gap-5"
       >
         {workData.map((project, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className="relative border-1 hover:shadow-black  border-gray-300 dark:border-2 dark:border-gray-800 shadow-2xl rounded-3xl px-2 pt-2 space-y-2 group duration-500 cursor-pointer"
+            className="relative border-1 hover:shadow-black  border-gray-300 dark:border-2 dark:border-gray-800 shadow-2xl rounded-3xl  group duration-500 cursor-pointer"
           >
-            {/**Text */}
-            <div className="pl-3">
-              <h1 className="text-xl font-semibold text-gray-800 dark:text-white/80">
-                {project.title}
-              </h1>
-              <p className="text-[14px] text-gray-500  dark:text-white/50">
-                {project.description}
-              </p>
-            </div>
+            <a href={project.link} target="_blank" className=" h-full w-full p-2 flex flex-col justify-between space-y-3">
+                {/**Text */}
+                <div className="pl-3 ">
+                  <h1 className="text-xl font-semibold text-gray-800 dark:text-white/80">
+                    {project.title}
+                  </h1>
+                  <p className="text-[14px] text-gray-500  dark:text-white/50">
+                    {project.description}
+                  </p>
+                </div>
 
-            {/** Image */}
-            <div>
-              <img
-                src={project.bgImage}
-                alt=""
-                className="aspect-square rounded-2xl object-cover"
-              />
-            </div>
+                {/** Image */}
+                <div>
+                  <img
+                    src={project.bgImage}
+                    alt=""
+                    className="aspect-square rounded-2xl object-cover"
+                  />
+                </div>
+
+            </a>
+            
 
             <div
               className={` absolute bottom-4 right-4 ${(index === 0 || index === 3) && 'border-gray-700 shadow-[2px_2px_2px_#303030]'}  border-1 p-2

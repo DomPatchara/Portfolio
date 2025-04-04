@@ -49,6 +49,7 @@ import work3 from './public/work-3.png'
 import work4 from './public/work-4.png'
 
 import footer from './public/footer-bg-color.png'
+import { link } from 'motion/react-client';
 
 
 
@@ -109,21 +110,25 @@ export const workData = [
         title: 'Movie Explorer',
         description: 'Find your favorite movies',
         bgImage: work1,
+        link: "https://dome-project-movie.netlify.app"
     },
     {
         title: 'Pizza Resterant',
         description: 'UI design',
         bgImage: work2,
+        link: "https://dome-project-pizza.netlify.app/"
     },
     {
         title: 'Ecommerce Website',
         description: 'Web Design',
         bgImage: work3,
+        link: "https://dome-project-eccomerce.netlify.app"
     },
     {
         title: 'SaaS Designing',
         description: 'UI/UX Design',
         bgImage: work4,
+        link: "https://dome-project-saas.netlify.app"
     },
 ]
 

@@ -37,8 +37,7 @@ const Services = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        I am an experienced Frontend Developer with over a decade of
-        professional expertise in the field. Throughtout my career
+        I am passionate about creating responsive and user-friendly websites. I focus on clean, efficient code and smooth user experiences.
       </motion.p>
 
       <motion.div
@@ -54,7 +53,7 @@ const Services = ({ isDarkMode }) => {
             className={`${
               index === 2 && "sm:col-start-2"
             } sm:col-span-2 lg:col-span-1 border border-gray-400 rounded-lg px-7 py-6
-             hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 
+             hover:shadow-black  hover:bg-lightHover hover:-translate-y-1 cursor-default
              duration-500 dark:hover:bg-gradient-to-br dark:hover:from-DarkHover/90 dark:hover:via-DarkHover/60  dark:hover:to-DarkHover/40 dark:hover:from-[50%] dark:hover:via-[90%] dark:hover:to-[100%] dark:hover:shadow-white`}
           >
             {index === 0 && (
