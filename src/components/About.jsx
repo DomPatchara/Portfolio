@@ -6,7 +6,7 @@ const About = ({ isDarkMode }) => {
   return (
     <motion.div
       id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20 "
+      className="max-w-full overflow-hidden  px-10 md:px-[12%] py-10 scroll-mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -54,8 +54,8 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl font-Ovo">
-            I’m an entry-level frontend developer from Thailand, passionate
+          <p className="mb-10 max-w-3xl font-Ovo">
+            I&apos;m an entry-level frontend developer from Thailand, passionate
             about creating user-friendly and responsive websites. I'm eager to
             apply my skills and begin my career as a frontend developer.
           </p>
@@ -101,7 +101,7 @@ const About = ({ isDarkMode }) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex items-center gap-3 sm:gap-5 "
+            className="flex flex-wrap items-center gap-3 sm:gap-5 "
           >
             {toolsData.map((tool, i) => (
               <motion.li
