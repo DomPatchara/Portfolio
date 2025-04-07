@@ -10,7 +10,7 @@ const Hero = () => {
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
-        <img src={assets.profile_img} className="w-40 rounded-full" />
+        <img src={assets.profile_img} className="w-32 mt-9 sm:mt-0 sm:w-40 rounded-full" />
       </motion.div>
 
       <motion.h3
