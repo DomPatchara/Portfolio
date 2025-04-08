@@ -62,8 +62,8 @@ const Hero = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/assets/public/resume.pdf"
-          download
+          href="/assets/public/Resume-Patchara.pdf"
+          download="Resume-Patchara.pdf"
           className="px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200"
         >
           my resume <img src={assets.download_icon} className="w-4" />
