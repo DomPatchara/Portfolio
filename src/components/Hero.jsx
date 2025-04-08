@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { assets } from "../../assets/assets";
 import { motion } from "motion/react";
 import useSectionInview from "../hook/useInView";
+import { ActiveContext } from "../context/active-section";
 
 const Hero = () => {
   const { ref } = useSectionInview("Home", 0.5)
+  const { setIsClick } = useContext(ActiveContext)
   return (
     <div className="w-11/12 max-w-3xl h-screen mx-auto flex flex-col  items-center justify-center text-center">
       <motion.div
@@ -50,6 +52,7 @@ const Hero = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
+          onClick={()=>setIsClick(true)}
           className="px-10 py-2 border border-white bg-black text-white rounded-full flex items-center gap-2 dark:bg-transparent"
         >
           contact me <img src={assets.right_arrow_white} className="w-4 mt-1" />
@@ -59,7 +62,7 @@ const Hero = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/resume.pdf"
+          href="/assets/public/resume.pdf"
           download
           className="px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200"
         >
