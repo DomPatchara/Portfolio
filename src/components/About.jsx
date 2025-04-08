@@ -1,11 +1,16 @@
 import React from "react";
 import { assets, infoList, toolsData } from "../../assets/assets";
 import { motion } from "motion/react";
+import useSectionInview from "../hook/useInView";
 
 const About = ({ isDarkMode }) => {
+
+  const { ref } = useSectionInview("About")
+
   return (
     <motion.div
       id="about"
+      ref={ref}
       className="max-w-full overflow-hidden  px-10 md:px-[12%] py-10 scroll-mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

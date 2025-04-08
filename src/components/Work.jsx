@@ -1,8 +1,10 @@
 import React from "react";
 import { assets, workData } from "../../assets/assets";
 import { motion } from "motion/react";
+import useSectionInview from "../hook/useInView";
 
 const Work = ({ isDarkMode }) => {
+  const { ref } = useSectionInview("Work")
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -10,6 +12,7 @@ const Work = ({ isDarkMode }) => {
       transition={{ duration: 1 }}
       id="work"
       className="w-full px-[12%] py-10 scroll-mt-25"
+      ref={ref}
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}

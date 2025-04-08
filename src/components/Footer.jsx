@@ -1,7 +1,10 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 
+
 const Footer = ({isDarkMode}) => {
+
+    
   return (
     <div className='mt-20'>
         <div className='text-center'>

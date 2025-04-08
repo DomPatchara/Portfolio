@@ -6,7 +6,6 @@ import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import react from './react.svg';
-import figma from './figma.png';
 import git from './git.png';
 import tailwindcss from './tailwindcss.png';
 import right_arrow_white from './right-arrow-white.png';
@@ -64,7 +63,6 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
-    figma,
     git,
     github_for_darkmode,
     tailwindcss,
@@ -110,25 +108,29 @@ export const workData = [
         title: 'Movie Explorer',
         description: 'Find your favorite movies',
         bgImage: work1,
-        link: "https://dome-project-movie.netlify.app"
+        link: "https://dome-project-movie.netlify.app",
+        git: "https://github.com/DomPatchara/React-Movie-Explorer"
     },
     {
         title: 'Pizza Resterant',
-        description: 'UI design',
+        description: 'Restaurant UI demo',
         bgImage: work2,
-        link: "https://dome-project-pizza.netlify.app/"
+        link: "https://dome-project-pizza.netlify.app/",
+        git: "https://github.com/DomPatchara/Pizza_Restaurant"
     },
     {
         title: 'Ecommerce Website',
-        description: 'Web Design',
+        description: 'Modern shopping experience',
         bgImage: work3,
-        link: "https://dome-project-eccomerce.netlify.app"
+        link: "https://dome-project-eccomerce.netlify.app",
+        git: "https://github.com/DomPatchara/Eccomerce-Web"
     },
     {
         title: 'SaaS Designing',
-        description: 'UI/UX Design',
+        description: 'Responsive SaaS website template',
         bgImage: work4,
-        link: "https://dome-project-saas.netlify.app"
+        link: "https://dome-project-saas.netlify.app",
+        git: "https://github.com/DomPatchara/SaaS-"
     },
 ]
 
@@ -155,7 +157,6 @@ export const toolsData = [
     { lightMode: vscode,        darkMode: vscode, title: "VS Code" },
     { lightMode: git,           darkMode: github_for_darkmode, title: "Github" },
     { lightMode: tailwindcss,   darkMode: tailwindcss, title: "Tailwind CSS" },
-    { lightMode: figma,         darkMode: figma, title: "Figma" },
     { lightMode: react,         darkMode: react, title: "React" },
     { lightMode: nextjs,        darkMode: nextjs_white_icon, title: "Next.js" },
     { lightMode: dark_framer,        darkMode: framer, title:"Framer Motion"}   

@@ -1,8 +1,12 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 import { motion } from 'motion/react';
+import useSectionInview from '../hook/useInView';
+
 
 const Contact = () => {
+
+    const { ref } = useSectionInview("Contact")
 
     // https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/simple-react-contact-form
     const [result, setResult] = React.useState("");
@@ -31,6 +35,7 @@ const Contact = () => {
   };
   return (
     <motion.div 
+    ref={ref}
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:1}}

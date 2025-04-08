@@ -1,11 +1,14 @@
 import React from "react";
 import { assets } from "../../assets/assets";
 import { motion } from "motion/react";
+import useSectionInview from "../hook/useInView";
 
 const Hero = () => {
+  const { ref } = useSectionInview("Home", 0.5)
   return (
     <div className="w-11/12 max-w-3xl h-screen mx-auto flex flex-col  items-center justify-center text-center">
       <motion.div
+        ref={ref}
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}

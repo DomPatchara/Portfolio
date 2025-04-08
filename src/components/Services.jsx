@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import { assets, serviceData, serviceIcon } from "../../assets/assets";
 import { motion } from "motion/react";
-import { div } from "motion/react-client";
+import useSectionInview from "../hook/useInView";
 
 const Services = ({ isDarkMode }) => {
-  console.log(serviceIcon);
+  const { ref } = useSectionInview("Service")
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,6 +12,7 @@ const Services = ({ isDarkMode }) => {
       transition={{ duration: 1 }}
       id="services"
       className="w-full px-[12%] py-10 scroll-mt-20"
+      ref={ref}
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}

@@ -1,7 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { assets } from '../../assets/assets'
+import { useContext } from 'react'
+import { ActiveContext } from '../context/active-section'
 
 const Navbar = ({isDarkMode, setIsDarkMode}) => {
+
+   const {isActive, setIsActive, setIsClick} = useContext(ActiveContext);
 
     const [isScroll, setIsScroll] = useState(false)
 
@@ -28,9 +32,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     }, [])
 
  
-    // Add Style Active Menus
-   const [isActive, setIsActive] = useState("Home");
-
    useEffect(() => {
     console.log("Current Active:", isActive);
 }, [isActive]);
@@ -51,11 +52,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             </a>
 
             <ul className={`hidden md:flex items-center  gap-6 lg:gap-8 rounded-full px-6 lg:px-12 py-3 ${isScroll ? "" : "bg-white/50 shadow-lg dark:border dark:border-white/50 dark:bg-transparent"}`}>
-                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''} `}    onClick={()=>setIsActive("Home")}     href="#top">Home</a></li>
-                <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>setIsActive("About")}    href="#about">About me</a></li>
-                <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>setIsActive("Service")}  href="#services">Services</a></li>
-                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>setIsActive("Work")}     href="#work">My Work</a></li>
-                <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>setIsActive("Contact")}  href="#contact">Contact me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''} `}    onClick={()=>{setIsActive("Home"); setIsClick(true) }}     href="#top">Home</a></li>
+                <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>{setIsActive("About") ; setIsClick(true)}}    href="#about">About me</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>{setIsActive("Service") ; setIsClick(true)}}  href="#services">Services</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>{setIsActive("Work") ; setIsClick(true)}}     href="#work">My Work</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>{setIsActive("Contact") ; setIsClick(true)}}  href="#contact">Contact me</a></li>
             </ul>
 
             <div className='flex items-center gap-4'>
@@ -67,6 +68,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                     href="#contact" 
                     className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-b-full rounded-tl-full ml-4 font-Ovo 
                                transition-all duration-500 hover:rounded-tr-full dark:border-white/50'
+                    onClick={()=>setIsClick(true)}
                 >
                     Contact <img src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} className='w-3'/>
                 </a>
@@ -83,7 +85,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                     <img src={isDarkMode ? assets.close_white : assets.close_black} alt="" className='w-5 cursor-pointer'/>
                 </div>
 
-                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''}`}    onClick={()=>{setIsActive("Home"); closeMenu();}}  href="#top">Home</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''}`}    onClick={()=>{setIsActive("Home"); closeMenu(); }}  href="#top">Home</a></li>
                 <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>{setIsActive("About"); closeMenu();}  }  href="#about">About me</a></li>
                 <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>{setIsActive("Service"); closeMenu();}}  href="#services">Services</a></li>
                 <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>{setIsActive("Work"); closeMenu();}   }  href="#work">My Work</a></li>
