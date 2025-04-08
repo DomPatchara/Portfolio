@@ -46,9 +46,10 @@ import work1 from './public/work-1.png'
 import work2 from './public/work-2.png'
 import work3 from './public/work-3.png'
 import work4 from './public/work-4.png'
+import resume from './public/Resume-Patchara.pdf'
 
 import footer from './public/footer-bg-color.png'
-import { link } from 'motion/react-client';
+
 
 
 
@@ -100,7 +101,8 @@ export const assets = {
     work1,
     work2,
     work3,
-    work4
+    work4,
+    resume
 };
 
 export const workData = [
