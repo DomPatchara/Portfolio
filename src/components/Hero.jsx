@@ -39,7 +39,7 @@ const Hero = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto text-base/7 mt-2"
       >
-        I’m an entry-level frontend developer from Thailand, passionate about
+        I&apos;m an entry-level frontend developer from Thailand, passionate about
         creating user-friendly and responsive websites. I'm eager to apply my
         skills and begin my career as a frontend developer.
       </motion.p>
@@ -59,7 +59,7 @@ const Hero = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/sample-resume.pdf"
+          href="/resume.pdf"
           download
           className="px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200"
         >
