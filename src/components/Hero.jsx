@@ -53,7 +53,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
           onClick={()=>setIsClick(true)}
-          className="px-10 py-2 border border-white bg-black text-white rounded-full flex items-center gap-2 dark:bg-transparent"
+          className="px-10 py-2 border border-white bg-black text-white rounded-full flex items-center gap-2 dark:bg-transparent hover:scale-105 transition-all duration-300"
         >
           contact me <img src={assets.right_arrow_white} className="w-4 mt-1" />
         </motion.a>
@@ -64,7 +64,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
           href={assets.resume}
           download={assets.resume}
-          className="px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200"
+          className="px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200 hover:scale-105 transition-all duration-300"
         >
           my resume <img src={assets.download_icon} className="w-4" />
         </motion.a>
