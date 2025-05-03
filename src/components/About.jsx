@@ -11,7 +11,7 @@ const About = ({ isDarkMode }) => {
     <motion.div
       id="about"
       ref={ref}
-      className="max-w-full overflow-hidden  px-10 md:px-[12%] py-10 scroll-mt-20"
+      className="w-full px-10 md:px-[12%] py-10 scroll-mt-13"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
