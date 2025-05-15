@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 @layer base {
-     body {
+    body {
         overflow-x: hidden;
     }
 }
@@ -49,11 +49,11 @@ a.active {
       }
 
     .cardContainer {
-        @apply h-screen top-[80px] sticky flex items-center justify-center  
+        @apply h-screen top-[60px] sticky flex items-center justify-center
     }
 
     .card {
-        @apply relative h-[500px] w-[1000px] top-[-8%] rounded-2xl origin-top p-5 shadow-4xl border-t-2 dark:border-[#11001F] border-gray-200 dark:shadow-DarkHover dark:shadow-xl
+        @apply relative h-[500px] w-[1000px] top-[-8%] rounded-2xl origin-top p-5 shadow-4xl border-t-2 dark:border-[#11001F] border-gray-200 dark:shadow-DarkHover dark:shadow-xl 
     }
 }
 

@@ -19,7 +19,7 @@ const Work = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="work"
-      className="w-full px-[12%] py-10 scroll-mt-20"
+      className="w-full px-[12%] py-10 scroll-mt-20 "
       ref={ref}
     >
       <motion.h4
@@ -50,7 +50,7 @@ const Work = ({ isDarkMode }) => {
         showcasing my expertise in front-end development.
       </motion.p>
 
-      <main ref={container} className="relative mt-[5vh]">
+      <main ref={container} className="relative mt-[1vh] sm:mt-[5vh]">
         {workData.map((work, index) => {
 
           const targetScale = 1 - ((workData.length - index) * 0.05)
