@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { assets } from "../../assets/assets";
-import { motion } from "motion/react";
+import { motion } from 'framer-motion'
 import useSectionInview from "../hook/useInView";
 import { ActiveContext } from "../context/active-section";
 

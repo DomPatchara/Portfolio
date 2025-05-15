@@ -3,12 +3,12 @@
 
 @import "tailwindcss";
 
-
 @layer base {
-    html, body {
+     body {
         overflow-x: hidden;
     }
 }
+
 @theme {
     /* Font */
     --font-Ovo: 'Ovo', serif;
@@ -47,6 +47,14 @@ a.active {
     .fading-icon {
         @apply [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
       }
+
+    .cardContainer {
+        @apply h-screen top-[80px] sticky flex items-center justify-center  
+    }
+
+    .card {
+        @apply relative h-[500px] w-[1000px] top-[-8%] rounded-2xl origin-top p-5 shadow-4xl border-t-2 dark:border-[#11001F] border-gray-200 dark:shadow-DarkHover dark:shadow-xl
+    }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

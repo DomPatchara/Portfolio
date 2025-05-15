@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { assets, serviceData, serviceIcon } from "../../assets/assets";
-import { motion } from "motion/react";
+import { motion } from 'framer-motion'
 import useSectionInview from "../hook/useInView";
 
 const Services = ({ isDarkMode }) => {

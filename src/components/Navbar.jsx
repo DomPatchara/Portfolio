@@ -38,7 +38,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
 
   return (
-    <>
+    <div>
         {/*------ Background Nav ---------- */}
         <div className='fixed top-0 right-0 w-11/12  -z-10 translate-y-[-80%]'>
             <img src={assets.header_bg_color} className='w-full' />
@@ -74,13 +74,13 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 </a>
 
                 {/**---- Menu Icon------ */}
-                <button className='block md:hidden ml-3' onClick={openMenu}>
+                <button className='block md:hidden  ml-3' onClick={openMenu}>
                     <img src={isDarkMode? assets.menu_white : assets.menu_black} alt="" className='w-6 cursor-pointer'/>
                 </button>
             </div>
 
             {/*-------------Moblie menu ------------- */}
-            <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 fixed top-0 bottom-0  -right-[16rem] py-20 px-10 w-64 h-screen bg-gray-200 transition duration-500 dark:bg-DarkHover dark:text-white'>
+            <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 fixed top-0 bottom-0 -right-[16rem] py-20 px-10 w-64 h-screen bg-gray-200 transition duration-500 dark:bg-DarkHover dark:text-white'>
                 <div className='absolute right-6 top-6' onClick={closeMenu}>
                     <img src={isDarkMode ? assets.close_white : assets.close_black} alt="" className='w-5 cursor-pointer'/>
                 </div>
@@ -92,7 +92,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>{setIsActive("Contact"); closeMenu();}}  href="#contact">Contact me</a></li>
             </ul>
         </nav>
-    </>
+    </div>
   )
 }
 

@@ -1,6 +1,5 @@
-import React from "react";
 import { assets, infoList, toolsData } from "../../assets/assets";
-import { motion } from "motion/react";
+import { motion } from 'framer-motion'
 import useSectionInview from "../hook/useInView";
 
 const About = ({ isDarkMode }) => {

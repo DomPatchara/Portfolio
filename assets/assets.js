@@ -111,28 +111,32 @@ export const workData = [
         description: 'Find your favorite movies',
         bgImage: work1,
         link: "https://dome-project-movie.netlify.app",
-        git: "https://github.com/DomPatchara/React-Movie-Explorer"
+        git: "https://github.com/DomPatchara/React-Movie-Explorer",
+        color: "#433D8B"
     },
     {
         title: 'Pizza Resterant',
         description: 'Restaurant UI demo',
         bgImage: work2,
         link: "https://dome-project-pizza.netlify.app/",
-        git: "https://github.com/DomPatchara/Pizza_Restaurant"
+        git: "https://github.com/DomPatchara/Pizza_Restaurant",
+        color: "#3b3396"
     },
     {
         title: 'Ecommerce Website',
         description: 'Modern shopping experience',
         bgImage: work3,
         link: "https://dome-project-eccomerce.netlify.app",
-        git: "https://github.com/DomPatchara/Eccomerce-Web"
+        git: "https://github.com/DomPatchara/Eccomerce-Web",
+        color: "#2E236C"
     },
     {
         title: 'SaaS Designing',
         description: 'Responsive SaaS website template',
         bgImage: work4,
         link: "https://dome-project-saas.netlify.app",
-        git: "https://github.com/DomPatchara/SaaS-"
+        git: "https://github.com/DomPatchara/SaaS-",
+        color: "#17153B"
     },
 ]
 
