@@ -68,6 +68,7 @@ const Work = ({ isDarkMode }) => {
               git={work.git}
               bgcolor={work.color}
               isDarkMode={isDarkMode}
+              techs={work.techs}
             />
           );
         })}
