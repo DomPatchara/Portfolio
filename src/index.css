@@ -53,7 +53,7 @@ a.active {
     }
 
     .card {
-        @apply relative h-[500px] w-[1000px] top-[-8%] rounded-2xl origin-top p-5 shadow-xl border-t-2 dark:border-[#11001F] border-gray-200 dark:shadow-black 
+        @apply relative h-[590px] md:h-[500px] w-[1000px] top-[-8%] rounded-2xl origin-top p-5 shadow-xl border-t-2 dark:border-[#11001F] border-gray-200 dark:shadow-black 
     }
 }
 

@@ -42,17 +42,23 @@ import dark_framer from "./dark-framer.svg";
 import redux from "./redux.svg"
 import Uxui from "./UI-Element.jpg";
 import UXui_2 from "./UI-Element2.svg";
+import prisma from "./prisma.png";
+import primsa_white from "./prisma_white.svg"
+import mongoDB from "./mongodb.svg"
 
 import work1 from "./public/work-1.png";
 import work2 from "./public/work-2.png";
 import work3 from "./public/work-3.png";
 import work4 from "./public/work-4.png";
-import resume from "./public/Resume-Patchara.pdf";
+import resume from "./public/Resume_Patchara_Yakiaw.pdf";
 
 import footer from "./public/footer-bg-color.png";
-import { title } from "framer-motion/client";
+
 
 export const assets = {
+  primsa_white,
+  prisma,
+  mongoDB,
   Uxui,
   UXui_2,
   footer,
@@ -108,7 +114,7 @@ export const workData = [
   {
     title: "Movie Explorer",
     description:
-      "Learning create UI pages with some functions and Fetching API from The Movie Database (TMDB) , ease to find favorite movie.",
+      "Learning create UI pages with interactive features and API integration using The Movie Database (TMDB).\n\n This project allows users to easily search and explore their favorite movies, helping me practice real-world frontend development skills like fetching data, handling state, and creating responsive layouts.",
     bgImage: work1,
     link: "https://dome-project-movie.netlify.app",
     git: "https://github.com/DomPatchara/React-Movie-Explorer",
@@ -118,7 +124,7 @@ export const workData = [
   {
     title: "Pizza Resterant",
     description:
-      "This is my simple Pizza Restaurant UI Website with Responsive created by Next.JS and I'm Focus on basic that I learned is Dinamic route and Catch all Route and Redux Toolkit for global state.",
+      "This is my simple Pizza Restaurant UI Website with Responsive created by Next.JS and I'm Focus on basic that learned about Dynamic Routes, Catch-all Routes and implemented Redux Toolkit for global state management.",
     bgImage: work2,
     link: "https://dome-project-pizza.netlify.app/",
     git: "https://github.com/DomPatchara/Pizza_Restaurant",
@@ -199,6 +205,8 @@ export const toolsData = [
   { lightMode: tailwindcss, darkMode: tailwindcss, title: "Tailwind CSS" },
   { lightMode: react, darkMode: react, title: "React" },
   { lightMode: nextjs, darkMode: nextjs_white_icon, title: "Next.js" },
-  { lightMode: dark_framer, darkMode: framer, title: "Framer Motion" },
   { lightMode: typescript, darkMode: typescript, title: "Typescript" },
+  { lightMode: dark_framer, darkMode: framer, title: "Framer Motion" },
+  { lightMode: prisma, darkMode: primsa_white, title: "Prisma" },
+  { lightMode: mongoDB, darkMode: mongoDB, title: "MongoDB" },
 ];
