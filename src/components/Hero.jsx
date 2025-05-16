@@ -24,7 +24,7 @@ const Hero = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="flex gap-2 items-start text-xl md:text-2xl mb-3 font-Ovo mt-4"
       >
-        Hi! I'm Patchara Yakiaw <img src='/assets/favicon.png' className="w-6" />
+        Hi! I'm Patchara Yakiaw <img src={assets.favicon} className="w-6" />
       </motion.h3>
 
       <motion.h1

@@ -43,8 +43,9 @@ import redux from "./redux.svg"
 import Uxui from "./UI-Element.jpg";
 import UXui_2 from "./UI-Element2.svg";
 import prisma from "./prisma.png";
-import primsa_white from "./prisma_white.svg"
+import primsa_white from "./prisma_white.png"
 import mongoDB from "./mongodb.svg"
+import favicon from './favicon.png'
 
 import work1 from "./public/work-1.png";
 import work2 from "./public/work-2.png";
@@ -56,6 +57,7 @@ import footer from "./public/footer-bg-color.png";
 
 
 export const assets = {
+  favicon,
   primsa_white,
   prisma,
   mongoDB,
