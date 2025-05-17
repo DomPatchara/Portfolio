@@ -31,7 +31,7 @@ const Card = ({
           top: `calc(-5vh + ${i * 15}px)`,
         }}
       >
-        <div className="flex flex-col md:flex-row items-center justify-between h-full w-full gap-5">
+        <div className="flex flex-col md:flex-row items-center justify-center h-full w-full gap-5">
           {/** Image */}
           <div className="group w-full h-[60%] md:w-1/2 md:h-full flex flex-col items-center justify-center hover:scale-95 transition-transform duration-300">
             <a
@@ -59,15 +59,15 @@ const Card = ({
 
             {/**Teck Stack */}
             <div className="w-full flex md:flex-col md:pl-0 md:items-start  items-center justify-start ml-5 gap-5">
-              <h2 className="text-sm text-nowrap  md:text-md font-Outfit px-2 py-1 dark:bg-blue-700/30  dark:text-white/80 text-gray-600  bg-gray-100 shadow-lg rounded-2xl cursor-default">
+              <h2 className="hidden sm:block  text-sm text-nowrap  md:text-md font-Outfit px-2 py-1 dark:bg-blue-700/30  dark:text-white/80 text-gray-600  bg-gray-100 shadow-lg rounded-2xl cursor-default">
                 Tech Stack
               </h2>
-              <div className="flex gap-1">
+              <div className="flex pl-2 sm:pl-0 gap-1">
                 {techs.map((tech, index) => (
                   <motion.li
                     whileHover={{ scale: 1.05 }}
                     key={index}
-                    className="flex items-center justify-center w-10  sm:w-14 aspect-square border border-gray-400 rounded-full
+                    className="flex  items-center justify-center w-10  sm:w-14 aspect-square border border-gray-400 rounded-full
                                       duration-500 hover:-translate-y-1 dark:bg-transparent relative group "
                   >
                     <img
@@ -86,7 +86,7 @@ const Card = ({
             </div>
 
             {/**Button */}
-            <div className="flex gap-4 mt-1 ">
+            <div className="flex gap-2 mt-1 ">
               <a
                 href={url}
                 target="_blank"

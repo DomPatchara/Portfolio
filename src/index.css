@@ -24,7 +24,6 @@
     --shadow-white: 4px 4px 0 #fff;
 
     --shadow-4xl: 0 50px 50px rgba(0, 0, 0, 0.25);
-
 }
 
 a.active {
@@ -53,7 +52,7 @@ a.active {
     }
 
     .card {
-        @apply relative h-[590px] md:h-[500px] w-[1000px] top-[-8%] rounded-2xl origin-top p-5 shadow-xl border-t-2 dark:border-[#11001F] border-gray-200 dark:shadow-black 
+        @apply relative h-[600px] sm:h-[620px] md:h-[500px] w-[1000px] top-[-8%] rounded-2xl origin-top px-5 py-6 shadow-xl border-t-2 dark:border-[#11001F] border-gray-200 dark:shadow-black 
     }
 }
 
