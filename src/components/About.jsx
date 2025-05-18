@@ -119,7 +119,7 @@ const About = ({ isDarkMode }) => {
                   alt="Tool"
                   className="w-7"
                 />
-                <div className="min-w-max opacity-0 group-hover:opacity-100  absolute bottom-0  translate-y-6">
+                <div className="min-w-max opacity-0 group-hover:opacity-100 absolute bottom-0  translate-y-6">
                   <p className="text-gray-600  dark:text-white/60 text-sm">{tool.title}</p>
                 </div>
               </motion.li>

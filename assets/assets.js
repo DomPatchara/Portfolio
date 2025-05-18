@@ -120,7 +120,6 @@ export const workData = [
     bgImage: work1,
     link: "https://dome-project-movie.netlify.app",
     git: "https://github.com/DomPatchara/React-Movie-Explorer",
-    color: "#433D8B",
     techs: [{ title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss}],
   },
   {
@@ -130,7 +129,6 @@ export const workData = [
     bgImage: work2,
     link: "https://dome-project-pizza.netlify.app/",
     git: "https://github.com/DomPatchara/Pizza_Restaurant",
-    color: "#3b3396",
     techs: [{title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon}, , { title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss},{title: "Typescript", icon: typescript, icon_dark: typescript}, {title: "Redux Toolkit", icon: redux, icon_dark: redux}],
   },
   {
@@ -140,7 +138,6 @@ export const workData = [
     bgImage: work3,
     link: "https://dome-project-eccomerce.netlify.app",
     git: "https://github.com/DomPatchara/Eccomerce-Web",
-    color: "#2E236C",
     techs: [{ title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss}],
   },
   {
@@ -150,7 +147,6 @@ export const workData = [
     bgImage: work4,
     link: "https://dome-project-saas.netlify.app",
     git: "https://github.com/DomPatchara/SaaS-",
-    color: "#17153B",
     techs: [{title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon}, , { title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss},{title: "Typescript", icon: typescript, icon_dark: typescript}, {title: "Framer Motion", icon: framer, icon_dark: framer}],
   },
 ];

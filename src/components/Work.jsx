@@ -66,7 +66,6 @@ const Work = ({ isDarkMode }) => {
               image={work.bgImage}
               url={work.link}
               git={work.git}
-              bgcolor={work.color}
               isDarkMode={isDarkMode}
               techs={work.techs}
             />

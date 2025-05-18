@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { assets } from "../../assets/assets";
 import { motion, useTransform } from "framer-motion";
 
@@ -8,7 +7,6 @@ const Card = ({
   url,
   image,
   git,
-  bgcolor,
   techs,
   i,
   progress,
@@ -27,7 +25,7 @@ const Card = ({
         transition={{ duration: 0.5 }}
         style={{
           scale: cardScale,
-          backgroundColor: isDarkMode ? bgcolor : "#ffffff",
+          backgroundColor: isDarkMode ? "#11001F" : "#ffffff",
           top: `calc(-5vh + ${i * 15}px)`,
         }}
       >
