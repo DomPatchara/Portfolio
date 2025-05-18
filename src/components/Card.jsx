@@ -20,9 +20,6 @@ const Card = ({
     <div className="cardContainer">
       <motion.div
         className="card"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
         style={{
           scale: cardScale,
           backgroundColor: isDarkMode ? "#11001F" : "#ffffff",
@@ -62,10 +59,9 @@ const Card = ({
               </h2>
               <div className="flex pl-2 sm:pl-0 gap-1">
                 {techs.map((tech, index) => (
-                  <motion.li
-                    whileHover={{ scale: 1.05 }}
+                  <li
                     key={index}
-                    className="flex  items-center justify-center w-10  sm:w-14 aspect-square border border-gray-400 rounded-full
+                    className="flex hover:scale-105  items-center justify-center w-10  sm:w-14 aspect-square border border-gray-400 rounded-full
                                       duration-500 hover:-translate-y-1 dark:bg-transparent relative group "
                   >
                     <img
@@ -78,7 +74,7 @@ const Card = ({
                         {tech.title}
                       </p>
                     </div>
-                  </motion.li>
+                  </li>
                 ))}
               </div>
             </div>

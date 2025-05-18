@@ -1,34 +1,28 @@
-import React from "react";
 import { assets } from "../../assets/assets";
 import { motion } from "framer-motion";
 import useSectionInview from "../hook/useInView";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const Contact = () => {
   const { ref } = useSectionInview("Contact");
 
   // https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/simple-react-contact-form
-  const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    const id = toast.loading("Sending....");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "8a27e9d8-a354-491b-91a1-d59dfdc89bb0");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
+    try {
+      await axios.post("https://api.web3forms.com/submit", formData);
+      toast.success("Form Submitted Successfully", { id });
       event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+    } catch (error) {
+      console.log("Error", err);
+      toast.error("An unexpected error occurred.");
     }
   };
   return (
@@ -118,8 +112,6 @@ const Contact = () => {
             Submit now{" "}
             <img src={assets.right_arrow_white} alt="" className="w-4 mt-1" />
           </motion.button>
-
-          <p className="mt-4">{result}</p>
         </motion.form>
       </motion.div>
     </div>

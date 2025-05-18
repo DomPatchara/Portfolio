@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ToasterProvider from "./provider/toast-provider";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -34,6 +35,7 @@ const App = () => {
 
   return (
     <>
+      <ToasterProvider/>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Hero isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
