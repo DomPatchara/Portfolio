@@ -105,22 +105,22 @@ const About = ({ isDarkMode }) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex flex-wrap items-center justify-center  md:justify-normal  gap-y-6 gap-2"
+            className="flex flex-wrap items-center justify-center  md:justify-normal  gap-y-2 gap-2"
           >
             {toolsData.map((tool, i) => (
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 key={i}
-                className="flex  items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
-                                      duration-500 hover:-translate-y-1 dark:bg-DarkTheme relative group"
+                className="flex  gap-2   items-center justify-center h-10 px-3 border border-gray-400 rounded-lg cursor-default
+                                      duration-500 hover:-translate-y-1 dark:bg-DarkTheme"
               >
                 <img
                   src={isDarkMode ? tool.darkMode : tool.lightMode}
                   alt="Tool"
                   className="w-7"
                 />
-                <div className="min-w-max opacity-0 group-hover:opacity-100 absolute bottom-0  translate-y-6">
-                  <p className="text-gray-600  dark:text-white/60 text-sm">{tool.title}</p>
+                <div className="min-w-max">
+                  <p className="text-gray-600  dark:text-white/60 text-md">{tool.title}</p>
                 </div>
               </motion.li>
             ))}

@@ -1,6 +1,6 @@
 import { workData } from "../../assets/assets";
 import useSectionInview from "../hook/useInView";
-import Card from "./Card";
+import Card from "./ui/Card";
 import { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 
@@ -37,7 +37,7 @@ const Work = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center text-5xl font-Ovo"
       >
-        My latest works
+        My latest projects
       </motion.h2>
 
       <motion.p

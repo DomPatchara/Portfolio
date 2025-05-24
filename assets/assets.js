@@ -40,8 +40,7 @@ import typescript from "./typescript.svg";
 import framer from "./framer.svg";
 import dark_framer from "./dark-framer.svg";
 import redux from "./redux.svg"
-import Uxui from "./UI-Element.jpg";
-import UXui_2 from "./UI-Element2.svg";
+
 import prisma from "./prisma.png";
 import primsa_white from "./prisma_white.png"
 import mongoDB from "./mongodb.svg"
@@ -54,15 +53,14 @@ import work4 from "./public/work-4.png";
 import resume from "./public/Resume_Patchara_Yakiaw.pdf";
 
 import footer from "./public/footer-bg-color.png";
-
+import uxui from "./uxui.webp"
 
 export const assets = {
+  uxui,
   favicon,
   primsa_white,
   prisma,
   mongoDB,
-  Uxui,
-  UXui_2,
   footer,
   code_icon,
   code_icon_dark,
@@ -129,7 +127,7 @@ export const workData = [
     bgImage: work2,
     link: "https://dome-project-pizza.netlify.app/",
     git: "https://github.com/DomPatchara/Pizza_Restaurant",
-    techs: [{title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon}, , { title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss},{title: "Typescript", icon: typescript, icon_dark: typescript}, {title: "Redux Toolkit", icon: redux, icon_dark: redux}],
+    techs: [{title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon}, , { title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss},{title: "Typescript", icon: typescript, icon_dark: typescript}, {title: "Redux", icon: redux, icon_dark: redux}],
   },
   {
     title: "Ecommerce Website",

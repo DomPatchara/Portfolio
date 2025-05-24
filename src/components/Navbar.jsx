@@ -49,7 +49,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <li><a className={`font-Ovo ${isActive === 'Home' ? 'active' : ''} `}    onClick={()=>{setIsActive("Home"); setIsClick(true) }}     href="#top">Home</a></li>
                 <li><a className={`font-Ovo ${isActive === 'About' ? 'active' : ''}`}   onClick={()=>{setIsActive("About") ; setIsClick(true)}}    href="#about">About me</a></li>
                 <li><a className={`font-Ovo ${isActive === 'Service' ? 'active' : ''}`} onClick={()=>{setIsActive("Service") ; setIsClick(true)}}  href="#services">Services</a></li>
-                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>{setIsActive("Work") ; setIsClick(true)}}     href="#work">My Work</a></li>
+                <li><a className={`font-Ovo ${isActive === 'Work' ? 'active' : ''}`}    onClick={()=>{setIsActive("Work") ; setIsClick(true)}}     href="#work">Projects</a></li>
                 <li><a className={`font-Ovo ${isActive === 'Contact' ? 'active' : ''}`} onClick={()=>{setIsActive("Contact") ; setIsClick(true)}}  href="#contact">Contact me</a></li>
             </ul>
 
