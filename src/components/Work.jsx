@@ -1,8 +1,9 @@
 import { workData } from "../../assets/assets";
 import useSectionInview from "../hook/useInView";
-import Card from './ui/Card'
+import Card from "./ui/card";
 import { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
+
 
 const Work = ({ isDarkMode }) => {
   const { ref } = useSectionInview("Work");
@@ -12,6 +13,8 @@ const Work = ({ isDarkMode }) => {
     target: container,
     offset: ["start start", "end end"],
   });
+
+ 
 
   return (
     <motion.div
@@ -52,14 +55,13 @@ const Work = ({ isDarkMode }) => {
 
       <main ref={container} className="relative mt-[1vh] sm:mt-[5vh]">
         {workData.map((work, index) => {
-
-          const targetScale = 1 - ((workData.length - index) * 0.05)
+          const targetScale = 1 - (workData.length - index) * 0.05;
           return (
             <Card
               key={index}
               i={index}
               progress={scrollYProgress}
-              range={[index * 0.25 ,1]}
+              range={[index * 0.25, 1]}
               targetScale={targetScale}
               title={work.title}
               desc={work.description}
