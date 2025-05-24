@@ -39,25 +39,23 @@ const Card = ({
           </div>
 
           {/** Body */}
-          <div className="w-full  sm:w-1/2 sm:h-full flex flex-col items-center  gap-7 lg:gap-12 ">
+          <div className="w-full  sm:w-1/2 sm:h-full flex flex-col items-center gap-4 lg:gap-y-8 ">
             <div>
               {/** Project Name */}
-              <h1 className="text-center text-gray-800 dark:text-white/80 font-bold text-2xl lg:text-4xl pb-6">
+              <h1 className="text-center text-gray-800 dark:text-white/80 font-bold text-2xl text-nowrap mb-2 md:text-[28px] lg:text-4xl lg:mb-5">
                 {title}
               </h1>
 
               {/**Descripton */}
-              <p className="line-clamp-2 indent-4 sm:line-clamp-4 lg:line-clamp-none text-sm text-gray-800 dark:text-white/50 font-Outfit lg:text-[16px]">
+              <p className="line-clamp-3 indent-4 text-sm sm:text-base text-gray-800 dark:text-white/50 font-Outfit lg:text-[17px]">
                 {desc}
               </p>
             </div>
 
             {/**Teck Stack */}
-            <div className="w-full flex sm:flex-col sm:pl-0 sm:items-start  items-center justify-start ml-5 gap-5">
-              <h2 className="hidden md:block  text-sm text-nowrap  sm:text-sm font-Outfit px-2 py-1 dark:bg-blue-700/30  dark:text-white/80 text-gray-600  bg-gray-100 shadow-lg rounded-2xl cursor-default">
-                Tech Stack
-              </h2>
-              <div className="hidden md:flex flex-wrap pl-2 sm:pl-0 gap-x-1 gap-y-2">
+            <div className="hidden w-full lg:flex flex-col sm:pl-0 sm:items-start  items-center justify-start ml-5 gap-5">
+              
+              <div className="flex flex-wrap pl-2 sm:pl-0 gap-x-1 gap-y-2">
                 {techs.map((tech, index) => (
                   <li
                     key={index}
@@ -80,25 +78,25 @@ const Card = ({
             </div>
 
             {/**Button */}
-            <div className="flex gap-2 mt-1 ">
+            <div className="flex gap-2 lg:gap-4 mt-1 ">
               <a
                 href={url}
                 target="_blank"
-                className="flex items-center justify-center gap-2 px-4 py-2 dark:bg-transparent  border dark:border-white/50 dark:text-white bg-black text-white  rounded-2xl group hover:scale-105 transition-transform duration-300"
+                className="flex items-center justify-center gap-3 px-4 py-2 lg:px-5  dark:bg-transparent  border dark:border-white/50 dark:text-white bg-black text-white  rounded-2xl group hover:scale-105 transition-transform duration-300"
               >
                 <img
                   src={assets.arrow_icon_dark}
-                  className="size-3 group-hover:rotate-45 transition-all duration-300"
+                  className="size-4 group-hover:rotate-45 transition-all duration-300"
                 />
-                <span className="font-semibold">Demo</span>
+                <span className="font-semibold lg:text-xl">Demo</span>
               </a>
               <a
                 href={git}
                 target="_blank"
-                className="flex items-center justify-center gap-2 px-4 py-2 dark:bg-gray-300 dark:text-black dark:border-none border  rounded-2xl hover:scale-105 transition-transform duration-300"
+                className="flex items-center justify-center gap-2 px-4 py-2 lg:px-5  dark:bg-gray-300 dark:text-black dark:border-none border  rounded-2xl hover:scale-105 transition-transform duration-300"
               >
                 <img src={assets.git} className="size-5" />
-                <span className="font-semibold">Github</span>
+                <span className="font-semibold lg:text-xl">Github</span>
               </a>
             </div>
           </div>
