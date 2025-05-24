@@ -68,17 +68,16 @@ const Services = ({ isDarkMode }) => {
                 <div className=" fading-icon">
                   <motion.div
                     animate={{
-                      x: ["35%", "-100%"],
+                      x: ["0%", "-50%"],
                     }}
                     transition={{
-                      duration: 15,
+                      duration: 30,
                       ease: "linear",
                       repeat: Infinity,
-                      repeatType: "loop",
                     }}
-                    className="min-w-max h-30  flex flex-row gap-6  items-center"
+                    className="min-w-max h-30  flex  gap-6  items-center"
                   >
-                    {Array.from({ length: 2 }).map((_, i) => (
+                    {Array.from({ length: 10 }).map((_, i) => (
                       <Fragment key={i}>
                         {serviceIcon.map((item, index) => (
                           <img

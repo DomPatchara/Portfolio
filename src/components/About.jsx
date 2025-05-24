@@ -117,7 +117,7 @@ const About = ({ isDarkMode }) => {
                 <img
                   src={isDarkMode ? tool.darkMode : tool.lightMode}
                   alt="Tool"
-                  className="w-7"
+                  className="w-5 "
                 />
                 <div className="min-w-max">
                   <p className="text-gray-600  dark:text-white/60 text-md">{tool.title}</p>

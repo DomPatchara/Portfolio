@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import clsx from "clsx";
 
 const bgColor = [
@@ -21,19 +21,17 @@ const bgColor = [
 ];
 
 const CircleColor = ({ currentColor, setCurrentColor }) => {
+
+  const handleClick = (value) =>{
+    setCurrentColor(currentColor === value ? "" : value)
+  }
   return (
     <>
       <div className="flex gap-2 ">
         {bgColor.map((color, index) => (
           <div
             key={index}
-            onClick={() => {
-              if (currentColor === color.value) {
-                setCurrentColor("");
-              } else {
-                setCurrentColor(color.value);
-              }
-            }}
+            onClick={() => handleClick(color.value)}
           >
             <span
               className={clsx(

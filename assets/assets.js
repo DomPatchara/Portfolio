@@ -54,8 +54,12 @@ import resume from "./public/Resume_Patchara_Yakiaw.pdf";
 
 import footer from "./public/footer-bg-color.png";
 import uxui from "./uxui.webp"
+import zustand from "./zustand.svg"
+import shadcn from './shadcn.svg'
+import shadcn_white from './shadcn_white.svg'
 
 export const assets = {
+  zustand,
   uxui,
   favicon,
   primsa_white,
@@ -205,4 +209,7 @@ export const toolsData = [
   { lightMode: dark_framer, darkMode: framer, title: "Framer Motion" },
   { lightMode: prisma, darkMode: primsa_white, title: "Prisma" },
   { lightMode: mongoDB, darkMode: mongoDB, title: "MongoDB" },
+  { lightMode: zustand, darkMode: zustand, title: "Zustand" },
+  { lightMode: redux, darkMode: redux, title: "Redux" },
+  { lightMode: shadcn, darkMode: shadcn_white, title: "Shadcn" },
 ];

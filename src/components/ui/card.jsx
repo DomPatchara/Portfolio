@@ -42,12 +42,12 @@ const Card = ({
           <div className="w-full  sm:w-1/2 sm:h-full flex flex-col items-center  gap-7 lg:gap-12 ">
             <div>
               {/** Project Name */}
-              <h1 className="text-center text-gray-800 dark:text-white/80 font-bold text-2xl pb-3">
+              <h1 className="text-center text-gray-800 dark:text-white/80 font-bold text-2xl lg:text-4xl pb-6">
                 {title}
               </h1>
 
               {/**Descripton */}
-              <p className="line-clamp-2 indent-4 sm:line-clamp-4 lg:line-clamp-none text-sm text-gray-800 dark:text-white/50 font-Outfit">
+              <p className="line-clamp-2 indent-4 sm:line-clamp-4 lg:line-clamp-none text-sm text-gray-800 dark:text-white/50 font-Outfit lg:text-[16px]">
                 {desc}
               </p>
             </div>
