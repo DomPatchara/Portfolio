@@ -1,6 +1,6 @@
 import { workData } from "../../assets/assets";
 import useSectionInview from "../hook/useInView";
-import Card from "./ui/Card";
+import Card from './ui/card'
 import { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 
