@@ -39,24 +39,29 @@ import nextjs_white_icon from "./nextjs-white-icon.svg";
 import typescript from "./typescript.svg";
 import framer from "./framer.svg";
 import dark_framer from "./dark-framer.svg";
-import redux from "./redux.svg"
+import redux from "./redux.svg";
 
 import prisma from "./prisma.png";
-import primsa_white from "./prisma_white.png"
-import mongoDB from "./mongodb.svg"
-import favicon from './favicon.png'
+import primsa_white from "./prisma_white.png";
+import mongoDB from "./mongodb.svg";
+import favicon from "./favicon.png";
 
 import work1 from "./public/work-1.png";
 import work2 from "./public/work-2.png";
 import work3 from "./public/work-3.png";
 import work4 from "./public/work-4.png";
+import work5 from "./public/work-5.png";
 import resume from "./public/Resume_Patchara_Yakiaw.pdf";
 
 import footer from "./public/footer-bg-color.png";
-import uxui from "./uxui.webp"
-import zustand from "./zustand.svg"
-import shadcn from './shadcn.svg'
-import shadcn_white from './shadcn_white.svg'
+import uxui from "./uxui.webp";
+import zustand from "./zustand.svg";
+import shadcn from "./shadcn.svg";
+import shadcn_white from "./shadcn_white.svg";
+
+import stripe from "./stripe.svg";
+import clerk from "./clerk.svg";
+import clerk_white from "./clerk_white.svg";
 
 export const assets = {
   zustand,
@@ -122,16 +127,26 @@ export const workData = [
     bgImage: work1,
     link: "https://dome-project-movie.netlify.app",
     git: "https://github.com/DomPatchara/React-Movie-Explorer",
-    techs: [{ title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss}],
+    techs: [
+      { title: "React", icon: react, icon_dark: react },
+      { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
+    ],
   },
   {
-    title: "Pizza Resterant",
+    title: "Pizza Restaurant",
     description:
       "This is my simple Pizza Restaurant UI Website with Responsive created by Next.JS and I'm Focus on basic that learned about Dynamic Routes, Catch-all Routes and implemented Redux Toolkit for global state management.",
     bgImage: work2,
     link: "https://dome-project-pizza.netlify.app/",
     git: "https://github.com/DomPatchara/Pizza_Restaurant",
-    techs: [{title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon}, , { title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss},{title: "Typescript", icon: typescript, icon_dark: typescript}, {title: "Redux", icon: redux, icon_dark: redux}],
+    techs: [
+      { title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon },
+      ,
+      { title: "React", icon: react, icon_dark: react },
+      { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
+      { title: "Typescript", icon: typescript, icon_dark: typescript },
+      { title: "Redux", icon: redux, icon_dark: redux },
+    ],
   },
   {
     title: "Ecommerce Website",
@@ -140,7 +155,10 @@ export const workData = [
     bgImage: work3,
     link: "https://dome-project-eccomerce.netlify.app",
     git: "https://github.com/DomPatchara/Eccomerce-Web",
-    techs: [{ title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss}],
+    techs: [
+      { title: "React", icon: react, icon_dark: react },
+      { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
+    ],
   },
   {
     title: "SaaS Designing",
@@ -149,7 +167,31 @@ export const workData = [
     bgImage: work4,
     link: "https://dome-project-saas.netlify.app",
     git: "https://github.com/DomPatchara/SaaS-",
-    techs: [{title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon}, , { title: 'React', icon: react, icon_dark: react }, {title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss},{title: "Typescript", icon: typescript, icon_dark: typescript}, {title: "Framer Motion", icon: framer, icon_dark: framer}],
+    techs: [
+      { title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon },
+      ,
+      { title: "React", icon: react, icon_dark: react },
+      { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
+      { title: "Typescript", icon: typescript, icon_dark: typescript },
+      { title: "Framer Motion", icon: framer, icon_dark: framer },
+    ],
+  },
+  {
+    title: "Admin Dashboard",
+    description:
+      "A full-stack eCommerce platform with an admin dashboard for managing products, categories, orders, and users. Built with Next.js, Tailwind CSS, and Shadcn UI for a sleek UI. Integrated with Prisma and MongoDB for robust data handling, Stripe for secure payments, and Clerk for authentication.",
+    bgImage: work5,
+    link: "https://admin-dashboard-rho-eight-40.vercel.app",
+    git: "https://github.com/DomPatchara/Admin-Dashboard",
+    techs: [
+      { title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon },
+      { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
+      { title: "Typescript", icon: typescript, icon_dark: typescript },
+      { title: "Prisma", icon: prisma, icon_dark: primsa_white },
+      { title: "MongoDB", icon: mongoDB, icon_dark: mongoDB },
+      { title: "Clerk", icon: clerk, icon_dark: clerk_white },
+      { title: "Stripe", icon: stripe, icon_dark: stripe },
+    ],
   },
 ];
 
@@ -157,7 +199,7 @@ export const serviceData = [
   {
     title: "Web Development",
     description:
-      "I build fast, modern websites using Next.js, TypeScript, Tailwind CSS, and Framer Motion for animations.",
+      "I build fast, modern full-stack websites using Next.js, TypeScript, Tailwind CSS, and Framer Motion for smooth animations.",
   },
   {
     title: "Responsive Design",
@@ -200,16 +242,18 @@ export const infoList = [
 ];
 
 export const toolsData = [
-  { lightMode: vscode, darkMode: vscode, title: "VS Code" },
-  { lightMode: git, darkMode: github_for_darkmode, title: "Github" },
-  { lightMode: tailwindcss, darkMode: tailwindcss, title: "Tailwind CSS" },
+  { lightMode: typescript, darkMode: typescript, title: "Typescript" },
   { lightMode: react, darkMode: react, title: "React" },
   { lightMode: nextjs, darkMode: nextjs_white_icon, title: "Next.js" },
-  { lightMode: typescript, darkMode: typescript, title: "Typescript" },
+  { lightMode: tailwindcss, darkMode: tailwindcss, title: "Tailwind CSS" },
+  { lightMode: shadcn, darkMode: shadcn_white, title: "Shadcn" },
   { lightMode: dark_framer, darkMode: framer, title: "Framer Motion" },
-  { lightMode: prisma, darkMode: primsa_white, title: "Prisma" },
-  { lightMode: mongoDB, darkMode: mongoDB, title: "MongoDB" },
+  { lightMode: git, darkMode: github_for_darkmode, title: "Github" },
+  { lightMode: vscode, darkMode: vscode, title: "VS Code" },
   { lightMode: zustand, darkMode: zustand, title: "Zustand" },
   { lightMode: redux, darkMode: redux, title: "Redux" },
-  { lightMode: shadcn, darkMode: shadcn_white, title: "Shadcn" },
+  { lightMode: prisma, darkMode: primsa_white, title: "Prisma" },
+  { lightMode: mongoDB, darkMode: mongoDB, title: "MongoDB" },
+  { lightMode: clerk, darkMode: clerk_white, title: "Clerk" },
+  { lightMode: stripe, darkMode: stripe, title: "Stripe" },
 ];
