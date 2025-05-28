@@ -1,16 +1,16 @@
 import { assets, infoList, toolsData } from "../../assets/assets";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 import useSectionInview from "../hook/useInView";
 
 const About = ({ isDarkMode }) => {
-
-  const { ref } = useSectionInview("About")
+  const threshold = window.innerWidth <= 768 ? 0.4 : 0.5;
+  const { ref } = useSectionInview("About me", threshold);
 
   return (
+    <div ref={ref} id="about" className="scroll-mt-20 ">
     <motion.div
-      id="about"
       ref={ref}
-      className="w-full px-10 md:px-[12%] py-10 scroll-mt-13"
+      className="w-full  px-10 md:px-[12%] py-10 "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -59,9 +59,12 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-3xl font-Ovo">
-            I&apos;m an entry-level frontend developer from Thailand, passionate
-            about creating user-friendly and responsive websites. I'm eager to
-            apply my skills and begin my career as a frontend developer.
+            I&apos;m a 24-year-old an entry-level frontend developer, passionate
+            about creating user-friendly and responsive websites. I enjoy
+            solving problems and learning new tools to build better web
+            experiences. While my focus is on front-end development, I&apos;m also
+            excited to grow into full-stack work and contribute to a creative,
+            collaborative team.
           </p>
 
           <motion.ul
@@ -120,7 +123,9 @@ const About = ({ isDarkMode }) => {
                   className="w-5 "
                 />
                 <div className="min-w-max">
-                  <p className="text-gray-600  dark:text-white/60 text-md">{tool.title}</p>
+                  <p className="text-gray-600  dark:text-white/60 text-md">
+                    {tool.title}
+                  </p>
                 </div>
               </motion.li>
             ))}
@@ -128,6 +133,7 @@ const About = ({ isDarkMode }) => {
         </motion.div>
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 

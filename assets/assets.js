@@ -121,6 +121,23 @@ export const assets = {
 
 export const workData = [
   {
+    title: "Admin Dashboard",
+    description:
+      "A full-stack eCommerce platform with an admin dashboard for managing products, categories, orders, and users. Built with Next.js, Tailwind CSS, and Shadcn UI for a sleek UI. Integrated with Prisma and MongoDB for robust data handling, Stripe for secure payments, and Clerk for authentication.",
+    bgImage: work5,
+    link: "https://admin-dashboard-rho-eight-40.vercel.app",
+    git: "https://github.com/DomPatchara/Admin-Dashboard",
+    techs: [
+      { title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon },
+      { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
+      { title: "Typescript", icon: typescript, icon_dark: typescript },
+      { title: "Prisma", icon: prisma, icon_dark: primsa_white },
+      { title: "MongoDB", icon: mongoDB, icon_dark: mongoDB },
+      { title: "Clerk", icon: clerk, icon_dark: clerk_white },
+      { title: "Stripe", icon: stripe, icon_dark: stripe },
+    ],
+  },
+  {
     title: "Movie Explorer",
     description:
       "Learning create UI pages with interactive features and API integration using The Movie Database (TMDB).\n\n This project allows users to easily search and explore their favorite movies, helping me practice real-world frontend development skills like fetching data, handling state, and creating responsive layouts.",
@@ -174,23 +191,6 @@ export const workData = [
       { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
       { title: "Typescript", icon: typescript, icon_dark: typescript },
       { title: "Framer Motion", icon: framer, icon_dark: framer },
-    ],
-  },
-  {
-    title: "Admin Dashboard",
-    description:
-      "A full-stack eCommerce platform with an admin dashboard for managing products, categories, orders, and users. Built with Next.js, Tailwind CSS, and Shadcn UI for a sleek UI. Integrated with Prisma and MongoDB for robust data handling, Stripe for secure payments, and Clerk for authentication.",
-    bgImage: work5,
-    link: "https://admin-dashboard-rho-eight-40.vercel.app",
-    git: "https://github.com/DomPatchara/Admin-Dashboard",
-    techs: [
-      { title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon },
-      { title: "Tailwind CSS", icon: tailwindcss, icon_dark: tailwindcss },
-      { title: "Typescript", icon: typescript, icon_dark: typescript },
-      { title: "Prisma", icon: prisma, icon_dark: primsa_white },
-      { title: "MongoDB", icon: mongoDB, icon_dark: mongoDB },
-      { title: "Clerk", icon: clerk, icon_dark: clerk_white },
-      { title: "Stripe", icon: stripe, icon_dark: stripe },
     ],
   },
 ];

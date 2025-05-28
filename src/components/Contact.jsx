@@ -4,8 +4,9 @@ import useSectionInview from "../hook/useInView";
 import toast from "react-hot-toast";
 import axios from "axios";
 
+
 const Contact = () => {
-  const { ref } = useSectionInview("Contact");
+  const { ref } = useSectionInview("Contact me");
 
   // https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/simple-react-contact-form
 
@@ -106,10 +107,10 @@ const Contact = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
             className="w-max py-3 px-8 flex items-center justify-between gap-2 bg-black/80 
-            text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:border-[0.5px] dark:hover:bg-DarkHover"
+            text-white active:bg-gray-500 rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:border-[0.5px] dark:hover:bg-DarkHover"
             type="submit"
           >
-            Submit now{" "}
+            Submit now
             <img src={assets.right_arrow_white} alt="" className="w-4 mt-1" />
           </motion.button>
         </motion.form>

@@ -2,13 +2,14 @@ import { Fragment } from "react";
 import { serviceData, serviceIcon } from "../../assets/assets";
 import { motion } from "framer-motion";
 import useSectionInview from "../hook/useInView";
-import React,{ useState } from "react";
+import { useState } from "react";
 import Toggle from "./ui/toggle";
-import clsx from "clsx";
 import CircleColor from "./ui/circle-color";
 
+
 const Services = ({ isDarkMode }) => {
-  const { ref } = useSectionInview("Service");
+  
+  const { ref } = useSectionInview("Services");
 
   const [currentColor, setCurrentColr] = useState("");
 

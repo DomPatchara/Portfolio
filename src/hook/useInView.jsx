@@ -3,12 +3,11 @@ import { useInView } from "react-intersection-observer";
 import { ActiveContext } from '../context/active-section';
 
 
-const useSectionInview = (sectionName) => {
+const useSectionInview = (sectionName, customThreshold = 0.75) => {
 
-    const { isActive, setIsActive, isClick, setIsClick} = useContext(ActiveContext);
+    const { setIsActive, isClick, setIsClick} = useContext(ActiveContext);
 
-    const threshold = window.innerWidth <= 768 ? 0.4 : 0.75;
-    const { ref, inView } = useInView({threshold}); // scroll ถึง 40% or 75% ของ Section นั้นๆ ----> setActive Nav links นั้นๆ (bgเปลี่ยน)
+    const { ref, inView } = useInView({threshold: customThreshold}); // scroll ถึง 40% or 75% ของ Section นั้นๆ ----> setActive Nav links นั้นๆ (bgเปลี่ยน)
 
 
     useEffect(()=>{

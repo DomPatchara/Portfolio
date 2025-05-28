@@ -82,7 +82,7 @@ const Card = ({
               <a
                 href={url}
                 target="_blank"
-                className="flex items-center justify-center gap-3 px-4 py-2 lg:px-5  dark:bg-transparent  border dark:border-white/50 dark:text-white bg-black text-white  rounded-2xl group hover:scale-105 transition-transform duration-300"
+                className="flex items-center justify-center gap-3 px-4 py-2 lg:px-5  dark:bg-transparent  border dark:border-white/50 dark:text-white bg-black text-white  rounded-2xl group hover:scale-105 transition-transform duration-300 active:bg-gray-600"
               >
                 <img
                   src={assets.arrow_icon_dark}
@@ -93,7 +93,7 @@ const Card = ({
               <a
                 href={git}
                 target="_blank"
-                className="flex items-center justify-center gap-2 px-4 py-2 lg:px-5  dark:bg-gray-300 dark:text-black dark:border-none border  rounded-2xl hover:scale-105 transition-transform duration-300"
+                className="flex items-center justify-center gap-2 px-4 py-2 lg:px-5  dark:bg-gray-300 dark:text-black dark:border-none border  rounded-2xl hover:scale-105 transition-transform duration-300 active:bg-gray-600"
               >
                 <img src={assets.git} className="size-5" />
                 <span className="font-semibold lg:text-xl">Github</span>

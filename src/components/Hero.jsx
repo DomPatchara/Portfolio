@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { assets } from "../../assets/assets";
 import { motion } from 'framer-motion'
 import useSectionInview from "../hook/useInView";
 import { ActiveContext } from "../context/active-section";
 
+
 const Hero = () => {
+  
   const { ref } = useSectionInview("Home", 0.5)
   const { setIsClick } = useContext(ActiveContext)
   return (
@@ -33,7 +35,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-4xl sm:text-6xl lg:text-[66px] font-Ovo"
       >
-        frontend web developer.
+        Junior Web Developer.
       </motion.h1>
       <motion.p
         initial={{ yopacity: 0 }}
@@ -53,7 +55,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
           onClick={()=>setIsClick(true)}
-          className="px-10 py-2 border border-white bg-black text-white rounded-full flex items-center gap-2 dark:bg-transparent hover:scale-105 transition-all duration-300"
+          className="px-10 py-2 active:bg-gray-500 border border-white bg-black text-white rounded-full flex items-center gap-2 dark:bg-transparent hover:scale-105 transition-all duration-300"
         >
           contact me <img src={assets.right_arrow_white} className="w-4 mt-1" />
         </motion.a>
@@ -64,7 +66,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
           href={assets.resume}
           download="Resume_Patchara_Yakiaw.pdf"
-          className="px-10 py-2 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200 hover:scale-105 transition-all duration-300"
+          className="px-10 py-2 active:bg-gray-500 border border-gray-500 rounded-full flex items-center gap-2  dark:text-black dark:bg-gray-200 hover:scale-105 transition-all duration-300"
         >
           my resume <img src={assets.download_icon} className="w-4" />
         </motion.a>
