@@ -136,7 +136,7 @@ export const workData = [
     description:
       "A full-stack eCommerce platform with an admin dashboard for managing products, categories, orders, and users. Built with Next.js, Tailwind CSS, and Shadcn UI for a sleek UI. Integrated with Prisma and MongoDB for robust data handling, Stripe for secure payments, and Clerk for authentication.",
     bgImage: work5,
-    link: "https://admin-dashboard-zeta-virid-kxhqimrkkj.vercel.app",
+    link: "https://admin-dashboard-dome-patcharas-projects.vercel.app/",
     git: "https://github.com/DomPatchara/Admin-Dashboard",
     techs: [
       { title: "Next.js", icon: nextjs, icon_dark: nextjs_white_icon },
