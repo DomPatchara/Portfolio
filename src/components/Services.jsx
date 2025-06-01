@@ -61,7 +61,7 @@ const Services = ({ isDarkMode }) => {
               key={index}
               className={`${
                 index === 2 && "sm:col-start-2"
-              } sm:col-span-2 lg:col-span-1 border border-gray-400 rounded-lg px-7 py-6
+              } sm:col-span-2 lg:col-span-1 shadow-gray-sm  rounded-lg px-7 py-6
              hover:shadow-black  hover:bg-lightHover hover:-translate-y-1 cursor-default
              duration-500 dark:hover:bg-gradient-to-br dark:hover:from-DarkHover/90 dark:hover:via-DarkHover/60  dark:hover:to-DarkHover/40 dark:hover:from-[50%] dark:hover:via-[90%] dark:hover:to-[100%] dark:hover:shadow-white`}
             >

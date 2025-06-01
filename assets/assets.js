@@ -63,7 +63,18 @@ import stripe from "./stripe.svg";
 import clerk from "./clerk.svg";
 import clerk_white from "./clerk_white.svg";
 
+import nodejs from "./node-js.svg"
+import express from "./express.svg"
+import express_white from "./express_white.svg"
+import postgresql from "./postgresql.svg"
+import postman from "./postman.svg"
+
 export const assets = {
+  postman,
+  nodejs,
+  express,
+  express_white,
+  postgresql,
   zustand,
   uxui,
   favicon,
@@ -242,18 +253,22 @@ export const infoList = [
 ];
 
 export const toolsData = [
-  { lightMode: typescript, darkMode: typescript, title: "Typescript" },
-  { lightMode: react, darkMode: react, title: "React" },
-  { lightMode: nextjs, darkMode: nextjs_white_icon, title: "Next.js" },
-  { lightMode: tailwindcss, darkMode: tailwindcss, title: "Tailwind CSS" },
-  { lightMode: shadcn, darkMode: shadcn_white, title: "Shadcn" },
-  { lightMode: dark_framer, darkMode: framer, title: "Framer Motion" },
-  { lightMode: git, darkMode: github_for_darkmode, title: "Github" },
-  { lightMode: vscode, darkMode: vscode, title: "VS Code" },
-  { lightMode: zustand, darkMode: zustand, title: "Zustand" },
-  { lightMode: redux, darkMode: redux, title: "Redux" },
-  { lightMode: prisma, darkMode: primsa_white, title: "Prisma" },
-  { lightMode: mongoDB, darkMode: mongoDB, title: "MongoDB" },
-  { lightMode: clerk, darkMode: clerk_white, title: "Clerk" },
-  { lightMode: stripe, darkMode: stripe, title: "Stripe" },
+  { lightMode: react, darkMode: react, title: "React", category: "Frontend" },
+  { lightMode: nextjs, darkMode: nextjs_white_icon, title: "Next.js", category: "Frontend" },
+  { lightMode: typescript, darkMode: typescript, title: "Typescript", category: "Frontend" },
+  { lightMode: tailwindcss, darkMode: tailwindcss, title: "Tailwind CSS", category: "Frontend" },
+  { lightMode: shadcn, darkMode: shadcn_white, title: "Shadcn", category: "Frontend" },
+  { lightMode: dark_framer, darkMode: framer, title: "Framer Motion", category: "Frontend" },
+  { lightMode: git, darkMode: github_for_darkmode, title: "Github", category: "Dev Tools" },
+  { lightMode: vscode, darkMode: vscode, title: "VS Code", category: "Dev Tools" },
+  { lightMode: zustand, darkMode: zustand, title: "Zustand", category: "Frontend" },
+  { lightMode: redux, darkMode: redux, title: "Redux", category: "Frontend" },
+  { lightMode: nodejs, darkMode: nodejs, title: "Node.js", category: "Backend" },
+  { lightMode: express, darkMode: express_white, title: "Express.js", category: "Backend" },
+  { lightMode: prisma, darkMode: primsa_white, title: "Prisma", category: "Backend" },
+  { lightMode: mongoDB, darkMode: mongoDB, title: "MongoDB", category: "Backend" },
+  { lightMode: clerk, darkMode: clerk_white, title: "Clerk", category: "Dev Tools" },
+  { lightMode: stripe, darkMode: stripe, title: "Stripe", category: "Dev Tools" },
+  { lightMode: postgresql, darkMode: postgresql, title: "PostgreSQL", category: "Backend" },
+  { lightMode: postman, darkMode: postman, title: "Postman", category: "Dev Tools" },
 ];

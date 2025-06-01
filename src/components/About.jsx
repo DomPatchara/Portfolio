@@ -1,10 +1,18 @@
 import { assets, infoList, toolsData } from "../../assets/assets";
 import { motion } from "framer-motion";
 import useSectionInview from "../hook/useInView";
+import { useState } from "react";
+import clsx from "clsx";
+
+
+
+const Tablists = ["Frontend", "Backend", "Dev Tools"]
 
 const About = ({ isDarkMode }) => {
   const threshold = window.innerWidth <= 768 ? 0.4 : 0.5;
   const { ref } = useSectionInview("About me", threshold);
+
+  const [currentTab, setCurrentTab] = useState("Frontend")
 
   return (
     <div ref={ref} id="about" className="scroll-mt-20 ">
@@ -34,7 +42,7 @@ const About = ({ isDarkMode }) => {
       </motion.h2>
 
       <motion.div
-        className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
+        className="flex w-full flex-col lg:flex-row items-center lg:items-start  gap-20 my-20"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -71,7 +79,7 @@ const About = ({ isDarkMode }) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto"
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <motion.li
@@ -99,18 +107,33 @@ const About = ({ isDarkMode }) => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.3 }}
-            className="my-6 text-gray-700 dark:text-white"
+            className="text-gray-700 dark:text-white font-bold mt-6 mb-2 text-xl text-center"
           >
-            Tools & Technologies I Use
+            🛠️ Tech Stack
           </motion.h4>
+
+          <motion.div
+           initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
+          className="flex bg-gray-200 dark:bg-gray-700/40 max-w-fit rounded-xl mx-auto  items-center justify-center py-2 px-2 gap-2 mb-4 ">
+            {Tablists.map((tab)=>(
+              <button 
+              onClick={()=>setCurrentTab(tab)}
+              className={clsx("font-semibold px-4 py-2 dark:bg-[#6b4e8393] rounded-2xl bg-gray-200 hover:opacity-100 hover:scale-105  cursor-pointer transition-all duration-500", currentTab === tab ? "bg-white shadow-gray-sm dark:shadow-none pointer-events-none" : "opacity-40" )}>
+                {tab}
+              </button>
+            ))}
+          </motion.div>
+
 
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex flex-wrap items-center justify-center  md:justify-normal  gap-y-2 gap-2"
+            className="flex flex-wrap items-center justify-center  gap-y-2 gap-2 "
           >
-            {toolsData.map((tool, i) => (
+            {toolsData.filter(tool => tool.category === currentTab).map((tool, i) => (
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 key={i}
