@@ -68,6 +68,8 @@ import express from "./express.svg"
 import express_white from "./express_white.svg"
 import postgresql from "./postgresql.svg"
 import postman from "./postman.svg"
+import graphql from './graphql.svg'
+import redis from './redis.svg'
 
 export const assets = {
   postman,
@@ -271,4 +273,6 @@ export const toolsData = [
   { lightMode: stripe, darkMode: stripe, title: "Stripe", category: "Dev Tools" },
   { lightMode: postgresql, darkMode: postgresql, title: "PostgreSQL", category: "Backend" },
   { lightMode: postman, darkMode: postman, title: "Postman", category: "Dev Tools" },
+  { lightMode: graphql, darkMode: graphql, title: "GraphQL", category: "Frontend" },
+  { lightMode: redis, darkMode: redis, title: "Redis", category: "Backend" },
 ];
